@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>원기108년 이후 정례법회 출석 분석 · 경기인천교구</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --paper:#eaeef2;--panel:#fbfcfd;--panel2:#f2f5f8;--ink:#172130;--muted:#5b6a7d;
+    --faint:#8695a6;--line:#d4dbe3;--teal:#2f6d74;--teal2:#4c8d90;--ochre:#b0652f;
+    --gold:#bd9a44;--pos:#2f6d74;--neg:#bb5140;
+    --serif:'Noto Serif KR',serif;
+    --sans:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+       font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px 80px}
+  .num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+
+  header.mast{padding:52px 20px 28px;text-align:center}
+  .ilwon{width:64px;height:64px;border:2.5px solid var(--ink);border-radius:50%;margin:0 auto 22px;position:relative}
+  .ilwon::after{content:"";position:absolute;inset:9px;border-radius:50%;border:1px solid var(--gold);opacity:.5}
+  .eyebrow{font-size:12px;letter-spacing:.26em;color:var(--muted);font-weight:600;margin-bottom:14px}
+  h1{font-family:var(--serif);font-weight:700;font-size:clamp(26px,4.4vw,38px);line-height:1.24;margin:0 0 10px;letter-spacing:-.02em}
+  h1 .yr{color:var(--teal)}
+  .sub{color:var(--muted);font-size:14.5px;max-width:610px;margin:0 auto}
+  .prov{margin-top:20px;font-size:12.5px;color:var(--faint);display:inline-flex;flex-wrap:wrap;
+        gap:6px 16px;justify-content:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+        padding:12px 4px;max-width:730px}
+  .prov b{color:var(--ink);font-weight:600}
+
+  .scope{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);
+         border-radius:8px;padding:18px 22px;margin:28px 0 6px}
+  .scope h3{margin:0 0 10px;font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:8px}
+  .scope h3::before{content:"";width:7px;height:7px;background:var(--gold);border-radius:50%}
+  .scope ul{margin:0;padding-left:2px;list-style:none}
+  .scope li{position:relative;padding-left:20px;margin:7px 0;font-size:13.5px;color:var(--muted)}
+  .scope li::before{content:"—";position:absolute;left:0;color:var(--faint)}
+  .scope li b{color:var(--ink);font-weight:600}
+
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px 0 6px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:10px;padding:18px}
+  .kpi .v{font-family:var(--serif);font-weight:600;font-size:27px;line-height:1}
+  .kpi .v small{font-size:14px;font-weight:600;margin-left:2px}
+  .kpi .l{font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.4}
+  .kpi.alt{border-top-color:var(--ochre)}
+
+  section{margin-top:50px}
+  .sec-head{display:flex;align-items:baseline;gap:13px;margin-bottom:6px;border-bottom:1.5px solid var(--ink);padding-bottom:10px}
+  .sec-no{font-family:var(--serif);font-size:15px;color:var(--gold);font-weight:700}
+  .sec-head h2{font-family:var(--serif);font-size:21px;font-weight:600;margin:0}
+  .sec-head .badge{margin-left:auto;font-size:10.5px;font-weight:600;color:var(--ochre);
+     background:#f3e6d9;border:1px solid #e6cfba;padding:3px 10px;border-radius:20px;white-space:nowrap}
+  .sec-head .badge.live{color:var(--teal);background:#dcece9;border-color:#bfdcd7}
+  .lead{color:var(--muted);font-size:14px;margin:14px 0 22px;max-width:750px}
+  .lead b{color:var(--ink);font-weight:600}
+
+  .divider{margin:56px 0 0;text-align:center;color:var(--faint);font-size:12px;letter-spacing:.2em;font-weight:600}
+  .divider span{background:var(--paper);padding:0 16px;position:relative;top:0}
+  .divider hr{border:0;border-top:1px solid var(--line);margin:-9px 0 0}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px 22px 18px}
+  .card h4{margin:0 0 3px;font-size:14.5px;font-weight:700}
+  .card .cap{font-size:12.5px;color:var(--faint);margin:0 0 16px}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:4px}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .sw{width:11px;height:11px;border-radius:2px;display:inline-block}
+
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .axlab{fill:var(--faint);font-size:10.5px;font-family:var(--sans)}
+  .glab{fill:var(--ink);font-size:10.5px;font-family:var(--sans)}
+  .gval{fill:var(--muted);font-size:10px;font-family:var(--sans);font-variant-numeric:tabular-nums}
+
+  .obs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px}
+  .ob{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .ob .h{font-size:13.5px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .ob .h .d{width:8px;height:8px;border-radius:2px;background:var(--teal)}
+  .ob.warn .h .d{background:var(--ochre)}
+  .ob p{margin:0;font-size:13px;color:var(--muted);line-height:1.6}
+  .ob p b{color:var(--ink);font-weight:600}
+
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+  table{border-collapse:collapse;width:100%;min-width:560px;font-size:13px}
+  thead th{background:var(--panel2);color:var(--muted);font-weight:600;font-size:11.5px;text-align:right;
+           padding:11px 13px;border-bottom:1.5px solid var(--line);white-space:nowrap;cursor:pointer;user-select:none}
+  thead th:first-child,thead th:nth-child(2){text-align:left}
+  thead th.sorted{color:var(--ink)} thead th .ar{opacity:.4;font-size:9px;margin-left:3px}
+  thead th.sorted .ar{opacity:1;color:var(--teal)}
+  tbody td{padding:9px 13px;text-align:right;border-bottom:1px solid #e7ecf1;font-variant-numeric:tabular-nums;white-space:nowrap}
+  tbody td:first-child,tbody td:nth-child(2){text-align:left}
+  tbody td:nth-child(2){font-weight:600}
+  tbody tr:hover{background:#f4f8f9}
+  tbody tr.focus{background:#eef5f5}
+  tbody tr.focus td:nth-child(2){color:var(--teal)}
+  .tagf{font-size:10px;background:var(--teal);color:#fff;padding:1px 7px;border-radius:20px;margin-left:7px;font-weight:600}
+  .barcell{position:relative}
+  .barcell .fill{position:absolute;left:0;top:0;bottom:0;background:#dcece9;z-index:0;border-radius:0 3px 3px 0}
+  .barcell span{position:relative;z-index:1}
+  .dot{display:inline-block;font-size:11px;color:var(--faint)}
+
+  .part{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .pcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .pcard h4{margin:0 0 14px;font-size:14px;font-weight:700}
+  .stack{height:26px;display:flex;border-radius:6px;overflow:hidden;margin-bottom:8px}
+  .stack .seg{display:flex;align-items:center;justify-content:center;color:#fff;font-size:11.5px;font-weight:600}
+  .plabel{font-size:12px;color:var(--muted)}
+
+  .foot{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--faint);line-height:1.75}
+  .foot b{color:var(--muted);font-weight:600}
+  .foot code{background:var(--panel2);padding:1px 6px;border-radius:4px;font-size:11.5px;color:var(--muted)}
+
+  @media(max-width:680px){.kpis{grid-template-columns:1fr 1fr}.obs,.part{grid-template-columns:1fr}
+    .sec-head .badge{margin-left:0;order:3;flex-basis:100%}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div class="ilwon" aria-hidden="true"></div>
+    <div class="eyebrow">경기인천교구 · 정례법회 출석 분석</div>
+    <h1><span class="yr">원기108년 이후</span> 정례법회<br>출석 현황 분석</h1>
+    <p class="sub">「정례법회 출석 분포 분석」 자료를 바탕으로, 시계열 지표는 <b>원기108년(2023)~현재</b>로
+       재집계하고, 연도로 나눌 수 없는 구조 지표는 전체 기간 참고로 함께 실었습니다.</p>
+    <div class="prov">
+      <span><b>대상</b> 정례법회 6종(일반·어린이·청년·학생·군법회·대학생)</span>
+      <span><b>시계열 구간</b> 원기108–111 · 2023–2026 상반기</span>
+    </div>
+  </header>
+
+  <div class="scope">
+    <h3>분석 구간과 데이터 한계</h3>
+    <ul>
+      <li><b>원기 ↔ 서기</b> — 원기108=2023 · 109=2024 · 110=2025 · 111=2026(상반기 부분집계). 이 네 해가 "원기108~현재"입니다.</li>
+      <li><b>원기108 이후로 재집계한 것</b> — 원 자료의 연도별 합계가 연 단위로 제공되므로, <b>개요·연도추이·회복도</b>는 원기108 이후로 정확히 재산출했습니다. (壹·貳·參)</li>
+      <li><b>전체 기간(원기100–111) 누적으로만 제공되는 것</b> — 원 자료의 <b>세부종류·교당·참여자 구성</b>은 연도 교차 수치가 없어 연도 분리가 불가합니다.
+          따라서 <b>구조 참고</b>로 전체 기간 기준을 그대로 실었습니다. (肆·伍·陸) 이 부분의 원기108+ 분리 재집계는 개별 개최 기록 원자료가 있어야 가능합니다.</li>
+    </ul>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v num">9,960</div><div class="l">정례법회 개최 건수<br>(원기108~현재)</div></div>
+    <div class="kpi"><div class="v num">240,777</div><div class="l">총 출석 인원</div></div>
+    <div class="kpi"><div class="v num">24.2<small>명</small></div><div class="l">1회당 평균 출석</div></div>
+    <div class="kpi alt"><div class="v num">85<small>%</small></div><div class="l">팬데믹 이전(원기101–104)<br>연 출석 대비 수준</div></div>
+  </div>
+
+  <!-- PART 1: 108+ time series -->
+  <section id="s1">
+    <div class="sec-head"><span class="sec-no">壹</span><h2>연도별 출석 추이</h2><span class="badge live">원기108+ 재집계</span></div>
+    <p class="lead">팬데믹(원기105) 급감 이후 출석은 회복하다 <b>원기108~110에 걸쳐 연 6.8~6.9만 명대로 평탄화</b>되었고,
+       원기111 상반기도 같은 페이스입니다.</p>
+    <div class="card">
+      <h4>연간 총 출석 및 1회 평균 출석</h4>
+      <p class="cap">막대 = 연간 총 출석(명) · 선 = 1회당 평균(명) · 진한 막대 = 원기108 이후</p>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--teal)"></i>원기108 이후</span>
+        <span><i class="sw" style="background:#c6d4dc"></i>원기100–107</span>
+        <span><i class="sw" style="background:var(--ochre)"></i>1회 평균(선)</span>
+      </div>
+      <div id="trend"></div>
+    </div>
+  </section>
+
+  <section id="s2">
+    <div class="sec-head"><span class="sec-no">貳</span><h2>회복 정체와 밀도 안정</h2><span class="badge live">원기108+ 재집계</span></div>
+    <p class="lead">팬데믹 이전(원기101–104) 연평균과 견주면 <b>규모는 약 85% 선에서 정체</b>했으나
+       <b>1회당 밀도는 97% 수준으로 거의 회복</b>했습니다. 개최 건수와 총 출석이 함께 줄어 <b>법회당 인원은 유지되는</b> 구조입니다.</p>
+    <div class="card">
+      <h4>팬데믹 이전 대비 회복도</h4>
+      <p class="cap">기준 = 원기101–104(2016–2019) 연평균 · 원기111은 상반기 부분집계라 제외</p>
+      <div id="recov"></div>
+    </div>
+    <div class="obs" style="margin-top:18px">
+      <div class="ob"><div class="h"><span class="d"></span>밀도는 지켰다</div>
+        <p>원기108~110 모두 <b>1회 평균 24명대</b>로 팬데믹 이전(24.9명)의 97% 수준. 참석하는 법회 규모는 거의 회복됐습니다.</p></div>
+      <div class="ob warn"><div class="h"><span class="d"></span>규모는 정체</div>
+        <p>연 총 출석은 6.8~6.9만 명대에서 <b>3년째 횡보</b>. 팬데믹 이전 8.1만 명대의 약 85%로 추가 회복 동력이 약합니다.</p></div>
+      <div class="ob warn"><div class="h"><span class="d"></span>개최 건수 감소</div>
+        <p>연 개최가 원기101–104 평균 3,254건에서 <b>2,800건대(약 87%)</b>로 축소. 밀도 유지의 이면에 법회 수 감소가 있습니다.</p></div>
+      <div class="ob"><div class="h"><span class="d"></span>원기111 페이스 동일</div>
+        <p>2026 상반기 1,475건·35,472명으로 <b>1회 24.0명</b>. 연환산 시 전년과 사실상 같은 흐름입니다.</p></div>
+    </div>
+  </section>
+
+  <section id="s3">
+    <div class="sec-head"><span class="sec-no">參</span><h2>연도별 상세</h2><span class="badge live">원기108+ 재집계</span></div>
+    <p class="lead">재집계 구간의 연도별 수치입니다. 원기111은 상반기까지의 부분 집계입니다.</p>
+    <div class="tbl-wrap">
+      <table id="ytbl"><thead><tr>
+        <th style="cursor:default">연도</th><th style="cursor:default">개최 건수</th>
+        <th style="cursor:default">총 출석</th><th style="cursor:default">1회 평균</th><th style="cursor:default">전년 대비</th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <div class="divider"><hr><span>이하 전체 기간(원기100–111) 구조 참고 · 연도 분리 불가</span></div>
+
+  <!-- PART 2: all-period structure -->
+  <section id="s4">
+    <div class="sec-head"><span class="sec-no">肆</span><h2>세부종류별 구성</h2><span class="badge">전체기간 누적</span></div>
+    <p class="lead"><b>일반법회가 총출석의 93%</b>를 차지하는 교화의 근간입니다. 어린이·청년·학생 등 청소년 법회는
+       건수는 있으나 <b>1회 출석이 4~7명</b> 수준으로 소규모입니다.</p>
+    <div class="card">
+      <h4>정례법회 6종 총출석 및 1회 평균</h4>
+      <p class="cap">막대 = 총출석(명) · 우측 값 = 1회 평균 · 원기100–111 누적</p>
+      <div id="typeChart"></div>
+    </div>
+  </section>
+
+  <section id="s5">
+    <div class="sec-head"><span class="sec-no">伍</span><h2>교당별 정례법회 출석</h2><span class="badge">전체기간 누적</span></div>
+    <p class="lead"><b>분당·수원·인천</b> 등 대형 교당에 출석이 집중됩니다. 1회 평균은 약대(40.7)·부평(39.9)·수원(38.1)이 높고,
+       군법회는 <b>이천·안성·하남</b>, 청소년 법회는 <b>수원·인천·안산국제</b>에서 상대적 강세입니다.
+       머리글을 눌러 정렬할 수 있습니다.</p>
+    <div class="tbl-wrap">
+      <table id="ttbl"><thead><tr>
+        <th data-k="rank" style="cursor:default">#</th>
+        <th data-k="name" class="sorted">교당<span class="ar">▾</span></th>
+        <th data-k="held">개최<span class="ar">▾</span></th>
+        <th data-k="att">총 출석<span class="ar">▾</span></th>
+        <th data-k="avg">1회 평균<span class="ar">▾</span></th>
+        <th data-k="youth">청소년<br>출석<span class="ar">▾</span></th>
+        <th data-k="mil">군법회<span class="ar">▾</span></th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <section id="s6">
+    <div class="sec-head"><span class="sec-no">陸</span><h2>참여자 구성</h2><span class="badge">전체기간 누적</span></div>
+    <p class="lead">정례법회 출석자는 <b>교도가 94%</b>로 대부분이며, 성별로는 <b>여성이 남성의 약 1.8배</b>입니다.
+       남성 교도와 신도·전무출신의 참여 제고가 과제로 확인됩니다.</p>
+    <div class="part">
+      <div class="pcard">
+        <h4>신분 구성</h4>
+        <div class="stack">
+          <div class="seg" style="width:94%;background:var(--teal)">교도 94%</div>
+          <div class="seg" style="width:6%;background:#b9c6d0;color:var(--ink)">6%</div>
+        </div>
+        <div class="plabel">교도가 절대다수. 신도·전무출신이 나머지 6%를 보조.</div>
+      </div>
+      <div class="pcard">
+        <h4>성별 구성 (여성 : 남성 ≈ 1.8 : 1)</h4>
+        <div class="stack">
+          <div class="seg" style="width:64%;background:var(--ochre)">여성 64%</div>
+          <div class="seg" style="width:36%;background:#cbb089;color:var(--ink)">남성 36%</div>
+        </div>
+        <div class="plabel">여성 참여가 뚜렷하게 높음. 남성 교도 참여 확대가 과제.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="s7">
+    <div class="sec-head"><span class="sec-no">柒</span><h2>청소년 정례법회 심층</h2><span class="badge">전체기간 누적</span></div>
+    <p class="lead">청소년 정례법회(<b>어린이·청년·학생</b>)만 따로 본 분석입니다. 전체 정례법회 출석의 <b>6.0%</b>에 그치고
+       1회 평균이 <b>5.6명</b>으로, 일반법회(32.8명)와 규모 차가 큽니다. 대학생 법회는 전 기간 57회·242명으로 사실상 미미합니다.</p>
+
+    <div class="kpis">
+      <div class="kpi"><div class="v num">8,842</div><div class="l">청소년 정례법회<br>개최 건수</div></div>
+      <div class="kpi"><div class="v num">49,822</div><div class="l">청소년 총 출석</div></div>
+      <div class="kpi"><div class="v num">5.6<small>명</small></div><div class="l">1회당 평균 출석</div></div>
+      <div class="kpi alt"><div class="v num">6.0<small>%</small></div><div class="l">전체 정례법회<br>출석 중 비중</div></div>
+    </div>
+
+    <div class="card" style="margin-top:22px">
+      <h4>청소년 유형별 출석 구성</h4>
+      <p class="cap">막대 = 총출석(명) · 우측 = 1회 평균 · 원기100–111 누적</p>
+      <div id="youthType"></div>
+    </div>
+
+    <p class="lead" style="margin-top:26px"><b>수원·분당·인천</b>이 청소년 출석 규모가 가장 크고, 총출석 대비 <b>비중</b>으로는
+       <b>안산국제(13.9%)·수정(12.9%)·수원(12.2%)</b>이 높습니다. 차세대 교화 저변을 넓히려면 비중이 낮은 대형 교당의 청소년 법회 활성화가 과제입니다.</p>
+    <div class="tbl-wrap">
+      <table id="ytbl2"><thead><tr>
+        <th data-k="youth" class="sorted">교당<span class="ar">▾</span></th>
+        <th data-k="youth">청소년<br>총출석<span class="ar">▾</span></th>
+        <th data-k="share">청소년<br>비중<span class="ar">▾</span></th>
+        <th data-k="kid">어린이<span class="ar">▾</span></th>
+        <th data-k="yng">청년<span class="ar">▾</span></th>
+        <th data-k="stu">학생<span class="ar">▾</span></th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+    <p class="cap" style="margin-top:10px">청소년 출석이 있는 36개 교당. 비중 = 청소년 출석 / 해당 교당 전체 정례법회 출석.</p>
+  </section>
+
+  <div class="foot">
+    <b>방법</b> · 원 자료(「경기인천교구 정례법회 출석 분포 분석」)의 연도별 합계표를 원기108 이후로 재집계(壹·貳·參).
+    회복도 기준선은 팬데믹 이전 원기101–104(2016–2019) 연평균. 세부종류·교당·참여자(肆·伍·陸)는 원 자료의 전체 기간(원기100–111) 누적값.
+    출석은 정례법회 6종의 남녀 출석수 합(계남+계여) 기준. 청소년 출석 = 어린이+청년+학생.<br>
+    <b>한계</b> · 교당별·세부종류별의 원기108+ 분리 재집계는 <code>정례법회 개별 개최 기록(연도·교당·종류·출석 행 단위)</code>이 있어야 재현할 수 있습니다.
+  </div>
+
+</div>
+
+<script>
+const D = {"rows": [{"greg": 2015, "won": 100, "half": false, "held": 3304, "att": 81365, "avg": 24.6}, {"greg": 2016, "won": 101, "half": false, "held": 3201, "att": 81865, "avg": 25.6}, {"greg": 2017, "won": 102, "half": false, "held": 3505, "att": 84418, "avg": 24.1}, {"greg": 2018, "won": 103, "half": false, "held": 3356, "att": 79683, "avg": 23.7}, {"greg": 2019, "won": 104, "half": false, "held": 2952, "att": 77457, "avg": 26.2}, {"greg": 2020, "won": 105, "half": false, "held": 1652, "att": 46893, "avg": 28.4}, {"greg": 2021, "won": 106, "half": false, "held": 2467, "att": 64559, "avg": 26.2}, {"greg": 2022, "won": 107, "half": false, "held": 2673, "att": 67814, "avg": 25.4}, {"greg": 2023, "won": 108, "half": false, "held": 2864, "att": 69421, "avg": 24.2}, {"greg": 2024, "won": 109, "half": false, "held": 2796, "att": 67903, "avg": 24.3}, {"greg": 2025, "won": 110, "half": false, "held": 2825, "att": 67981, "avg": 24.1}, {"greg": 2026, "won": 111, "half": true, "held": 1475, "att": 35472, "avg": 24.0}], "focus": {"held": 9960, "att": 240777, "avg": 24.2, "n_years": 4}, "pre": {"att": 80856, "held": 3254, "avg": 24.9}, "recov": {"y108": {"att": 85.9, "den": 97.2}, "y109": {"att": 84.0, "den": 97.6}, "y110": {"att": 84.1, "den": 96.8}}, "kpi_pct": 85, "by_type": [{"type": "일반", "held": 23498, "att": 769999, "avg": 32.8}, {"type": "어린이", "held": 4032, "att": 26132, "avg": 6.5}, {"type": "청년", "held": 2709, "att": 14859, "avg": 5.5}, {"type": "학생", "held": 2101, "att": 8831, "avg": 4.2}, {"type": "군법회", "held": 673, "att": 4768, "avg": 7.1}, {"type": "대학생", "held": 57, "att": 242, "avg": 4.2}], "temples": [{"rank": 1, "name": "분당교당", "held": 2403, "att": 113587, "avg": 47.3, "brk": {"일반": 105053, "어린이": 5099, "청년": 2105, "학생": 1330, "군법회": 0, "대학생": 0}}, {"rank": 2, "name": "수원교당", "held": 2426, "att": 92350, "avg": 38.1, "brk": {"일반": 81087, "어린이": 4375, "청년": 4673, "학생": 2215, "군법회": 0, "대학생": 0}}, {"rank": 3, "name": "인천교당", "held": 1446, "att": 45755, "avg": 31.6, "brk": {"일반": 40315, "어린이": 2117, "청년": 1866, "학생": 1249, "군법회": 0, "대학생": 208}}, {"rank": 4, "name": "군포교당", "held": 1061, "att": 33676, "avg": 31.7, "brk": {"일반": 31558, "어린이": 703, "청년": 787, "학생": 628, "군법회": 0, "대학생": 0}}, {"rank": 5, "name": "안산교당", "held": 1160, "att": 31732, "avg": 27.4, "brk": {"일반": 29376, "어린이": 1421, "청년": 793, "학생": 142, "군법회": 0, "대학생": 0}}, {"rank": 6, "name": "동안양교당", "held": 1100, "att": 28683, "avg": 26.1, "brk": {"일반": 26750, "어린이": 832, "청년": 624, "학생": 477, "군법회": 0, "대학생": 0}}, {"rank": 7, "name": "부천교당", "held": 736, "att": 26476, "avg": 36.0, "brk": {"일반": 25164, "어린이": 1205, "청년": 41, "학생": 61, "군법회": 0, "대학생": 5}}, {"rank": 8, "name": "부평교당", "held": 628, "att": 25050, "avg": 39.9, "brk": {"일반": 23841, "어린이": 501, "청년": 39, "학생": 669, "군법회": 0, "대학생": 0}}, {"rank": 9, "name": "오산교당", "held": 773, "att": 24554, "avg": 31.8, "brk": {"일반": 23387, "어린이": 660, "청년": 502, "학생": 5, "군법회": 0, "대학생": 0}}, {"rank": 10, "name": "북인천교당", "held": 809, "att": 24457, "avg": 30.2, "brk": {"일반": 23486, "어린이": 954, "청년": 0, "학생": 17, "군법회": 0, "대학생": 0}}, {"rank": 11, "name": "죽전교당", "held": 692, "att": 23507, "avg": 34.0, "brk": {"일반": 22608, "어린이": 790, "청년": 0, "학생": 97, "군법회": 0, "대학생": 12}}, {"rank": 12, "name": "산본교당", "held": 1083, "att": 23199, "avg": 21.4, "brk": {"일반": 20883, "어린이": 1523, "청년": 319, "학생": 474, "군법회": 0, "대학생": 0}}, {"rank": 13, "name": "약대교당", "held": 498, "att": 20286, "avg": 40.7, "brk": {"일반": 20199, "어린이": 87, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 14, "name": "과천교당", "held": 855, "att": 20235, "avg": 23.7, "brk": {"일반": 19680, "어린이": 127, "청년": 221, "학생": 207, "군법회": 0, "대학생": 0}}, {"rank": 15, "name": "동수원교당", "held": 682, "att": 20064, "avg": 29.4, "brk": {"일반": 18491, "어린이": 1552, "청년": 0, "학생": 21, "군법회": 0, "대학생": 0}}, {"rank": 16, "name": "성남교당", "held": 864, "att": 18933, "avg": 21.9, "brk": {"일반": 18400, "어린이": 9, "청년": 315, "학생": 209, "군법회": 0, "대학생": 0}}, {"rank": 17, "name": "광명교당", "held": 884, "att": 17569, "avg": 19.9, "brk": {"일반": 16867, "어린이": 291, "청년": 193, "학생": 218, "군법회": 0, "대학생": 0}}, {"rank": 18, "name": "이천교당", "held": 755, "att": 17204, "avg": 22.8, "brk": {"일반": 15423, "어린이": 300, "청년": 5, "학생": 26, "군법회": 1450, "대학생": 0}}, {"rank": 19, "name": "구리교당", "held": 471, "att": 17059, "avg": 36.2, "brk": {"일반": 17025, "어린이": 28, "청년": 6, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 20, "name": "평택교당", "held": 743, "att": 16279, "avg": 21.9, "brk": {"일반": 15750, "어린이": 445, "청년": 84, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 21, "name": "안산국제교당", "held": 894, "att": 15414, "avg": 17.2, "brk": {"일반": 13271, "어린이": 963, "청년": 1173, "학생": 7, "군법회": 0, "대학생": 0}}, {"rank": 22, "name": "안성교당", "held": 813, "att": 11744, "avg": 14.4, "brk": {"일반": 9231, "어린이": 0, "청년": 0, "학생": 0, "군법회": 2513, "대학생": 0}}, {"rank": 23, "name": "시화교당", "held": 637, "att": 11687, "avg": 18.3, "brk": {"일반": 10998, "어린이": 266, "청년": 423, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 24, "name": "기흥교당", "held": 700, "att": 11462, "avg": 16.4, "brk": {"일반": 10646, "어린이": 322, "청년": 447, "학생": 47, "군법회": 0, "대학생": 0}}, {"rank": 25, "name": "남양주교당", "held": 610, "att": 11334, "avg": 18.6, "brk": {"일반": 11303, "어린이": 10, "청년": 5, "학생": 16, "군법회": 0, "대학생": 0}}, {"rank": 26, "name": "용인교당", "held": 724, "att": 11329, "avg": 15.6, "brk": {"일반": 10709, "어린이": 388, "청년": 0, "학생": 232, "군법회": 0, "대학생": 0}}, {"rank": 27, "name": "남동교당", "held": 501, "att": 11112, "avg": 22.2, "brk": {"일반": 11112, "어린이": 0, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 28, "name": "경기광주교당", "held": 536, "att": 10569, "avg": 19.7, "brk": {"일반": 10559, "어린이": 10, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 29, "name": "화성교당", "held": 591, "att": 10168, "avg": 17.2, "brk": {"일반": 9833, "어린이": 0, "청년": 0, "학생": 35, "군법회": 293, "대학생": 7}}, {"rank": 30, "name": "동탄교당", "held": 579, "att": 8921, "avg": 15.4, "brk": {"일반": 8709, "어린이": 133, "청년": 79, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 31, "name": "연수교당", "held": 623, "att": 8567, "avg": 13.8, "brk": {"일반": 8452, "어린이": 84, "청년": 22, "학생": 9, "군법회": 0, "대학생": 0}}, {"rank": 32, "name": "송도교당", "held": 554, "att": 8529, "avg": 15.4, "brk": {"일반": 8435, "어린이": 15, "청년": 79, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 33, "name": "여주교당", "held": 553, "att": 7916, "avg": 14.3, "brk": {"일반": 7551, "어린이": 11, "청년": 0, "학생": 354, "군법회": 0, "대학생": 0}}, {"rank": 34, "name": "의왕교당", "held": 510, "att": 7153, "avg": 14.0, "brk": {"일반": 7153, "어린이": 0, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 35, "name": "청라교당", "held": 570, "att": 6201, "avg": 10.9, "brk": {"일반": 6201, "어린이": 0, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 36, "name": "하늘교당", "held": 524, "att": 6092, "avg": 11.6, "brk": {"일반": 5807, "어린이": 278, "청년": 7, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 37, "name": "오정교당", "held": 496, "att": 5782, "avg": 11.7, "brk": {"일반": 5782, "어린이": 0, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 38, "name": "수정교당", "held": 720, "att": 5667, "avg": 7.9, "brk": {"일반": 4938, "어린이": 633, "청년": 10, "학생": 86, "군법회": 0, "대학생": 0}}, {"rank": 39, "name": "하남교당", "held": 589, "att": 4939, "avg": 8.4, "brk": {"일반": 4429, "어린이": 0, "청년": 7, "학생": 0, "군법회": 503, "대학생": 0}}, {"rank": 40, "name": "양평교당", "held": 451, "att": 4259, "avg": 9.4, "brk": {"일반": 4259, "어린이": 0, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 41, "name": "가평교당", "held": 436, "att": 2570, "avg": 5.9, "brk": {"일반": 2565, "어린이": 0, "청년": 5, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 42, "name": "부개교당", "held": 182, "att": 1691, "avg": 9.3, "brk": {"일반": 1643, "어린이": 0, "청년": 29, "학생": 0, "군법회": 9, "대학생": 10}}, {"rank": 43, "name": "경기판교교당", "held": 60, "att": 741, "avg": 12.4, "brk": {"일반": 741, "어린이": 0, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}, {"rank": 44, "name": "병점교당", "held": 148, "att": 329, "avg": 2.2, "brk": {"일반": 329, "어린이": 0, "청년": 0, "학생": 0, "군법회": 0, "대학생": 0}}], "participants": {"member_pct": 94, "female_ratio": 1.8}, "youth": {"types": [{"type": "어린이", "held": 4032, "att": 26132, "avg": 6.5}, {"type": "청년", "held": 2709, "att": 14859, "avg": 5.5}, {"type": "학생", "held": 2101, "att": 8831, "avg": 4.2}], "held": 8842, "att": 49822, "avg": 5.6, "share": 6.0, "univ": {"held": 57, "att": 242, "avg": 4.2}, "temples": [{"name": "수원교당", "att": 92350, "youth": 11263, "share": 12.2, "kid": 4375, "yng": 4673, "stu": 2215}, {"name": "분당교당", "att": 113587, "youth": 8534, "share": 7.5, "kid": 5099, "yng": 2105, "stu": 1330}, {"name": "인천교당", "att": 45755, "youth": 5232, "share": 11.4, "kid": 2117, "yng": 1866, "stu": 1249}, {"name": "안산교당", "att": 31732, "youth": 2356, "share": 7.4, "kid": 1421, "yng": 793, "stu": 142}, {"name": "산본교당", "att": 23199, "youth": 2316, "share": 10.0, "kid": 1523, "yng": 319, "stu": 474}, {"name": "안산국제교당", "att": 15414, "youth": 2143, "share": 13.9, "kid": 963, "yng": 1173, "stu": 7}, {"name": "군포교당", "att": 33676, "youth": 2118, "share": 6.3, "kid": 703, "yng": 787, "stu": 628}, {"name": "동안양교당", "att": 28683, "youth": 1933, "share": 6.7, "kid": 832, "yng": 624, "stu": 477}, {"name": "동수원교당", "att": 20064, "youth": 1573, "share": 7.8, "kid": 1552, "yng": 0, "stu": 21}, {"name": "부천교당", "att": 26476, "youth": 1307, "share": 4.9, "kid": 1205, "yng": 41, "stu": 61}, {"name": "부평교당", "att": 25050, "youth": 1209, "share": 4.8, "kid": 501, "yng": 39, "stu": 669}, {"name": "오산교당", "att": 24554, "youth": 1167, "share": 4.8, "kid": 660, "yng": 502, "stu": 5}, {"name": "북인천교당", "att": 24457, "youth": 971, "share": 4.0, "kid": 954, "yng": 0, "stu": 17}, {"name": "죽전교당", "att": 23507, "youth": 887, "share": 3.8, "kid": 790, "yng": 0, "stu": 97}, {"name": "기흥교당", "att": 11462, "youth": 816, "share": 7.1, "kid": 322, "yng": 447, "stu": 47}, {"name": "수정교당", "att": 5667, "youth": 729, "share": 12.9, "kid": 633, "yng": 10, "stu": 86}, {"name": "광명교당", "att": 17569, "youth": 702, "share": 4.0, "kid": 291, "yng": 193, "stu": 218}, {"name": "시화교당", "att": 11687, "youth": 689, "share": 5.9, "kid": 266, "yng": 423, "stu": 0}, {"name": "용인교당", "att": 11329, "youth": 620, "share": 5.5, "kid": 388, "yng": 0, "stu": 232}, {"name": "과천교당", "att": 20235, "youth": 555, "share": 2.7, "kid": 127, "yng": 221, "stu": 207}, {"name": "성남교당", "att": 18933, "youth": 533, "share": 2.8, "kid": 9, "yng": 315, "stu": 209}, {"name": "평택교당", "att": 16279, "youth": 529, "share": 3.2, "kid": 445, "yng": 84, "stu": 0}, {"name": "여주교당", "att": 7916, "youth": 365, "share": 4.6, "kid": 11, "yng": 0, "stu": 354}, {"name": "이천교당", "att": 17204, "youth": 331, "share": 1.9, "kid": 300, "yng": 5, "stu": 26}, {"name": "하늘교당", "att": 6092, "youth": 285, "share": 4.7, "kid": 278, "yng": 7, "stu": 0}, {"name": "동탄교당", "att": 8921, "youth": 212, "share": 2.4, "kid": 133, "yng": 79, "stu": 0}, {"name": "연수교당", "att": 8567, "youth": 115, "share": 1.3, "kid": 84, "yng": 22, "stu": 9}, {"name": "송도교당", "att": 8529, "youth": 94, "share": 1.1, "kid": 15, "yng": 79, "stu": 0}, {"name": "약대교당", "att": 20286, "youth": 87, "share": 0.4, "kid": 87, "yng": 0, "stu": 0}, {"name": "화성교당", "att": 10168, "youth": 35, "share": 0.3, "kid": 0, "yng": 0, "stu": 35}, {"name": "구리교당", "att": 17059, "youth": 34, "share": 0.2, "kid": 28, "yng": 6, "stu": 0}, {"name": "남양주교당", "att": 11334, "youth": 31, "share": 0.3, "kid": 10, "yng": 5, "stu": 16}, {"name": "부개교당", "att": 1691, "youth": 29, "share": 1.7, "kid": 0, "yng": 29, "stu": 0}, {"name": "경기광주교당", "att": 10569, "youth": 10, "share": 0.1, "kid": 10, "yng": 0, "stu": 0}, {"name": "하남교당", "att": 4939, "youth": 7, "share": 0.1, "kid": 0, "yng": 7, "stu": 0}, {"name": "가평교당", "att": 2570, "youth": 5, "share": 0.2, "kid": 0, "yng": 5, "stu": 0}]}};
+const rows=D.rows, FOCUS=108;
+const wonLbl=r=>'원'+r.won+(r.half?'\u00A0상':'');
+const fmt=n=>Number(n).toLocaleString('ko-KR');
+
+/* 壹 trend */
+(function(){
+  const W=880,H=380,m={t:24,r:46,b:52,l:56};
+  const iw=W-m.l-m.r,ih=H-m.t-m.b,n=rows.length,gap=10,bw=(iw-gap*(n-1))/n;
+  const aMax=Math.max(...rows.map(r=>r.att))*1.1,vMin=22,vMax=30;
+  const X=i=>m.l+i*(bw+gap),Ya=v=>m.t+ih-(v/aMax)*ih,Yv=v=>m.t+ih-((v-vMin)/(vMax-vMin))*ih;
+  let s=`<svg viewBox="0 0 ${W} ${H}">`;
+  [20000,40000,60000,80000].forEach(g=>{const y=Ya(g);
+    s+=`<line x1="${m.l}" y1="${y}" x2="${m.l+iw}" y2="${y}" stroke="var(--line)" stroke-dasharray="2 3"/>`;
+    s+=`<text x="${m.l-8}" y="${y+3}" text-anchor="end" class="axlab">${g/1000}천</text>`;});
+  [24,26,28].forEach(g=>{const y=Yv(g);s+=`<text x="${m.l+iw+10}" y="${y+3}" class="axlab" style="fill:var(--ochre)">${g}</text>`;});
+  rows.forEach((r,i)=>{const x=X(i),y=Ya(r.att),h=m.t+ih-y,f=r.won>=FOCUS;
+    s+=`<rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="2.5" fill="${f?'var(--teal)':'#c6d4dc'}"${r.half?' opacity="0.7"':''}/>`;
+    s+=`<text x="${x+bw/2}" y="${y-6}" text-anchor="middle" class="gval">${(r.att/1000).toFixed(0)}k</text>`;
+    s+=`<text x="${x+bw/2}" y="${H-m.b+16}" text-anchor="middle" class="axlab" style="${f?'fill:var(--teal);font-weight:600':''}">${wonLbl(r)}</text>`;
+    s+=`<text x="${x+bw/2}" y="${H-m.b+30}" text-anchor="middle" class="axlab" style="font-size:9px;opacity:.7">'${String(r.greg).slice(2)}</text>`;});
+  s+=`<polyline points="${rows.map((r,i)=>`${X(i)+bw/2},${Yv(r.avg)}`).join(' ')}" fill="none" stroke="var(--ochre)" stroke-width="2"/>`;
+  rows.forEach((r,i)=>s+=`<circle cx="${X(i)+bw/2}" cy="${Yv(r.avg)}" r="3" fill="var(--ochre)"/>`);
+  document.getElementById('trend').innerHTML=s+'</svg>';
+})();
+
+/* 貳 recovery */
+(function(){
+  const it=[['원기108 (2023)',D.recov.y108],['원기109 (2024)',D.recov.y109],['원기110 (2025)',D.recov.y110]]
+    .map(([lb,o])=>({lb,att:o.att,den:o.den}));
+  const rowH=64,W=880,m={t:22,r:24,b:16,l:132},H=m.t+m.b+it.length*rowH,iw=W-m.l-m.r,X=v=>m.l+(v/110)*iw;
+  let s=`<svg viewBox="0 0 ${W} ${H}">`;
+  s+=`<line x1="${X(100)}" y1="${m.t-4}" x2="${X(100)}" y2="${H-6}" stroke="var(--gold)" stroke-dasharray="4 4"/>`;
+  s+=`<text x="${X(100)}" y="${m.t-8}" text-anchor="middle" class="axlab" style="fill:var(--gold)">팬데믹 이전 = 100%</text>`;
+  it.forEach((o,i)=>{const y=m.t+i*rowH;
+    s+=`<text x="${m.l-12}" y="${y+30}" text-anchor="end" class="glab" style="font-weight:600">${o.lb}</text>`;
+    s+=`<rect x="${m.l}" y="${y+4}" width="${X(o.att)-m.l}" height="18" rx="2.5" fill="var(--ochre)" opacity=".85"/>`;
+    s+=`<text x="${X(o.att)+7}" y="${y+18}" class="gval" style="fill:var(--ochre)">총출석 ${o.att}%</text>`;
+    s+=`<rect x="${m.l}" y="${y+26}" width="${X(o.den)-m.l}" height="18" rx="2.5" fill="var(--teal)" opacity=".85"/>`;
+    s+=`<text x="${X(o.den)+7}" y="${y+40}" class="gval" style="fill:var(--teal)">1회밀도 ${o.den}%</text>`;});
+  document.getElementById('recov').innerHTML=s+'</svg>';
+})();
+
+/* 參 year table */
+(function(){
+  const foc=rows.filter(r=>r.won>=FOCUS),idx=rows.findIndex(r=>r.won===FOCUS-1);
+  document.querySelector('#ytbl tbody').innerHTML=foc.map((r,k)=>{
+    const prev=(k===0)?rows[idx]:foc[k-1];let d='—';
+    if(!r.half&&prev){const p=(r.att-prev.att)/prev.att*100;d=(p>=0?'+':'')+p.toFixed(1)+'%';}
+    else if(r.half)d='<span style="color:var(--faint)">상반기</span>';
+    return `<tr class="focus"><td>${r.greg}${r.half?' 상반기':''}<span class="tagf">원${r.won}</span></td>
+      <td style="text-align:right">${fmt(r.held)}</td><td style="text-align:right">${fmt(r.att)}</td>
+      <td style="text-align:right">${r.avg}명</td><td style="text-align:right">${d}</td></tr>`;
+  }).join('');
+})();
+
+/* 肆 type chart */
+(function(){
+  const t=D.by_type.slice().sort((a,b)=>b.att-a.att);
+  const W=880,rowH=46,m={t:8,r:70,b:8,l:66},H=m.t+m.b+t.length*rowH,iw=W-m.l-m.r;
+  const max=Math.max(...t.map(x=>x.att)),X=v=>(v/max)*(iw);
+  let s=`<svg viewBox="0 0 ${W} ${H}">`;
+  t.forEach((x,i)=>{const y=m.t+i*rowH+8;
+    s+=`<text x="${m.l-10}" y="${y+16}" text-anchor="end" class="glab" style="font-weight:600">${x.type}</text>`;
+    s+=`<rect x="${m.l}" y="${y}" width="${Math.max(X(x.att),2)}" height="22" rx="3" fill="var(--teal)" opacity="${i===0?0.9:0.55}"/>`;
+    s+=`<text x="${m.l+Math.max(X(x.att),2)+8}" y="${y+16}" class="gval">${fmt(x.att)} · ${x.avg}명/회</text>`;});
+  document.getElementById('typeChart').innerHTML=s+'</svg>';
+})();
+
+/* 伍 temple table (sortable) */
+(function(){
+  const T=D.temples.map(t=>({...t,
+    youth:(t.brk['어린이']||0)+(t.brk['청년']||0)+(t.brk['학생']||0),
+    mil:t.brk['군법회']||0}));
+  const maxAtt=Math.max(...T.map(t=>t.att));
+  const tb=document.querySelector('#ttbl tbody');
+  let key='rank',dir=1;
+  function render(){
+    const arr=T.slice().sort((a,b)=>{let av=a[key],bv=b[key];
+      if(typeof av==='string')return dir*av.localeCompare(bv,'ko');return dir*(av-bv);});
+    tb.innerHTML=arr.map(t=>{
+      const bw=(t.att/maxAtt*100).toFixed(0);
+      return `<tr><td class="dot">${t.rank}</td><td>${t.name}</td>
+        <td>${fmt(t.held)}</td>
+        <td class="barcell"><span class="fill" style="width:${bw}%"></span><span>${fmt(t.att)}</span></td>
+        <td>${t.avg}명</td>
+        <td>${t.youth?fmt(t.youth):'<span class="dot">·</span>'}</td>
+        <td>${t.mil?fmt(t.mil):'<span class="dot">·</span>'}</td></tr>`;
+    }).join('');
+    document.querySelectorAll('#ttbl th').forEach(th=>{
+      if(!th.dataset.k)return;
+      th.classList.toggle('sorted',th.dataset.k===key);
+      const ar=th.querySelector('.ar');if(ar)ar.textContent=(th.dataset.k===key)?(dir>0?'▴':'▾'):'▾';});
+  }
+  document.querySelectorAll('#ttbl th').forEach(th=>{if(!th.dataset.k)return;
+    th.addEventListener('click',()=>{const k=th.dataset.k;
+      if(k===key)dir=-dir;else{key=k;dir=(k==='name'||k==='rank')?1:-1;}render();});});
+  render();
+})();
+
+/* 柒 youth type chart */
+(function(){
+  const t=D.youth.types.slice().sort((a,b)=>b.att-a.att);
+  const W=880,rowH=48,m={t:8,r:80,b:8,l:60},H=m.t+m.b+t.length*rowH,iw=W-m.l-m.r;
+  const max=Math.max(...t.map(x=>x.att)),X=v=>(v/max)*iw,tot=D.youth.att;
+  let s=`<svg viewBox="0 0 ${W} ${H}">`;
+  t.forEach((x,i)=>{const y=m.t+i*rowH+9,sh=(x.att/tot*100).toFixed(0);
+    s+=`<text x="${m.l-10}" y="${y+17}" text-anchor="end" class="glab" style="font-weight:600">${x.type}</text>`;
+    s+=`<rect x="${m.l}" y="${y}" width="${Math.max(X(x.att),2)}" height="24" rx="3" fill="var(--teal)" opacity="${0.85-i*0.18}"/>`;
+    s+=`<text x="${m.l+Math.max(X(x.att),2)+8}" y="${y+17}" class="gval">${fmt(x.att)} (${sh}%) · ${x.avg}명/회</text>`;});
+  document.getElementById('youthType').innerHTML=s+'</svg>';
+})();
+
+/* 柒 youth temple table (sortable) */
+(function(){
+  const T=D.youth.temples.slice();
+  const maxY=Math.max(...T.map(t=>t.youth));
+  const tb=document.querySelector('#ytbl2 tbody');
+  let key='youth',dir=-1;
+  function render(){
+    const arr=T.slice().sort((a,b)=>{let av=a[key],bv=b[key];
+      if(typeof av==='string')return dir*av.localeCompare(bv,'ko');return dir*(av-bv);});
+    tb.innerHTML=arr.map(t=>{const bw=(t.youth/maxY*100).toFixed(0);
+      return `<tr><td>${t.name}</td>
+        <td class="barcell" style="text-align:right"><span class="fill" style="width:${bw}%"></span><span>${fmt(t.youth)}</span></td>
+        <td style="text-align:right">${t.share}%</td>
+        <td style="text-align:right">${t.kid?fmt(t.kid):'<span class="dot">·</span>'}</td>
+        <td style="text-align:right">${t.yng?fmt(t.yng):'<span class="dot">·</span>'}</td>
+        <td style="text-align:right">${t.stu?fmt(t.stu):'<span class="dot">·</span>'}</td></tr>`;}).join('');
+    document.querySelectorAll('#ytbl2 th').forEach(th=>{
+      th.classList.toggle('sorted',th.dataset.k===key);
+      const ar=th.querySelector('.ar');if(ar)ar.textContent=(th.dataset.k===key)?(dir>0?'▴':'▾'):'▾';});
+  }
+  document.querySelectorAll('#ytbl2 th').forEach(th=>th.addEventListener('click',()=>{
+    const k=th.dataset.k;if(k===key)dir=-dir;else{key=k;dir=(k==='name')?1:-1;}render();}));
+  render();
+})();
+</script>
+</body>
+</html>
