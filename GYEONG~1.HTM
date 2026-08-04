@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>실행 계획서 — 회복 이후의 4년</title>
+<style>
+  :root{--ink:#1a1a1a;--sub:#5c5c5c;--line:#e2ded9;--bg:#faf9f7;--accent:#7a4419;--accent-l:#f3ede6;
+        --warn:#a3341f;--warn-l:#fbeeea;--ok:#2f6b46;--ok-l:#eaf3ee;--blue:#3d5a80;--blue-l:#eaeef4;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-size:15.5px;word-break:keep-all;
+       font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo",sans-serif;}
+  .wrap{max-width:1000px;margin:0 auto;padding:48px 28px 96px;}
+  header.doc{border-bottom:3px solid var(--accent);padding-bottom:20px;margin-bottom:30px;}
+  .eyebrow{font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:700;}
+  h1{font-size:29px;margin:10px 0 8px;line-height:1.35;letter-spacing:-.02em;}
+  .meta{font-size:13px;color:var(--sub);}
+  h2{font-size:20px;margin:44px 0 14px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4;}
+  h3{font-size:16px;margin:26px 0 8px;color:var(--accent);}
+  p{margin:10px 0} ul,ol{margin:10px 0 10px 4px;padding-left:20px} li{margin:5px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:#fff}
+  th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:var(--accent-l);font-weight:700;color:var(--accent)}
+  td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+  td.c,th.c{text-align:center;white-space:nowrap}
+  .card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px 20px;margin:14px 0}
+  .warn{background:var(--warn-l);border-left:4px solid var(--warn);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  .warn strong{color:var(--warn)}
+  .ok{background:var(--ok-l);border-left:4px solid var(--ok);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  .ok strong{color:var(--ok)}
+  .note{background:var(--accent-l);border-left:4px solid var(--accent);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  .blue{background:var(--blue-l);border-left:4px solid var(--blue);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  code{background:#efece7;padding:1px 5px;border-radius:3px;font-size:12.5px;font-family:Consolas,Menlo,monospace}
+  .formula{background:#fff;border:1px dashed var(--accent);padding:11px 15px;margin:11px 0;font-size:13.5px;border-radius:4px}
+  .tag{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;margin-right:6px;vertical-align:2px}
+  .tag.g{background:var(--ok)} .tag.r{background:var(--warn)} .tag.b{background:var(--blue)} .tag.gr{background:#8a8a8a}
+  .small{font-size:12.5px;color:var(--sub);line-height:1.65}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:16px 0}
+  .grid .card{margin:0}
+  .toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px 24px;font-size:14px}
+  .toc ol{columns:2;column-gap:32px;margin:6px 0 0;padding-left:20px}
+  .toc a{color:var(--ink);text-decoration:none}
+  hr{border:0;border-top:1px solid var(--line);margin:38px 0}
+  @media(max-width:640px){.toc ol{columns:1}.wrap{padding:26px 14px 60px}h1{font-size:22px}}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="doc">
+  <div class="eyebrow">경기인천교구 교화 분석 · 실행 계획서 v2.1</div>
+  <h1>회복 이후의 4년<br><span style="font-size:19px;color:var(--sub);font-weight:400">법회출석과 입교는 지금 어디에 있나 — 분석 실행 계획</span></h1>
+  <div class="meta">대상: 경기인천교구 <strong>일반 교당 43곳</strong>(번개교당 제외) · 분석 기간: 원기107~110(2022~2025) · 2026년 8월 4일</div>
+</header>
+
+<div style="background:#f4f1ec;border:1px solid #d8d0c4;border-left:4px solid #8a7f70;padding:12px 17px;margin:14px 0;border-radius:0 4px 4px 0;font-size:13px;color:#3d3833">
+<span style="font-weight:700;color:#5c5346;display:block;margin-bottom:4px">v2.1 변경 — 번개교당 제외</span>
+번개교당은 <b>군법회 중심의 특수 교당</b>입니다. 코로나 이후 정례법회 415건 중 <b>331건이 군법회</b>이고 <b>일반법회는 0건</b>이며, 1회당 출석도 12.6명으로 일반 교당(24.1명)의 절반입니다. 입교는 4년간 231명으로 교구 전체의 <b>18.9%</b>를 차지해, 함께 집계하면 교구 수치가 크게 왜곡됩니다.<br>
+→ <b>모든 비율·추세 산출에서 제외</b>하고, 각 장 끝에 번개교당 자체 수치를 별도 상자로 표기합니다. 보고서 부록 17-1에 전체 수치를 실었습니다.
+</div>
+
+<div class="warn">
+<strong>v1.2에서 무엇이 바뀌었나 — 방향 전환</strong><br>
+기존 계획서(v1.2)는 <strong>코로나 전과의 비교</strong>를 뼈대로 삼았습니다. 그 결과 모든 지표가 "코로나 전 대비 몇 %"로 표현되었고, 진단은 <em>"아직 76%밖에 회복하지 못했다"</em>로, 처방은 <em>"코로나로 끊긴 끈을 다시 잇자"</em>로 귀결되었습니다.<br><br>
+그러나 실제로 확인해 보니 <strong>회복은 원기108년에 이미 끝났고 그 뒤 3년은 평평합니다</strong>(전년 대비 +7.6% → −0.9% → +1.1%). 지금 필요한 질문은 "코로나에서 얼마나 회복했나"가 아니라 <strong>"회복이 끝난 뒤 지금 교화가 어떤 상태인가"</strong>입니다.<br><br>
+v2.0은 <strong>분석의 기준점을 코로나 이후 기간 내부로 옮깁니다.</strong> 코로나 전 수치는 삭제하지 않고 <strong>참고용 각주</strong>로 남깁니다.
+</div>
+
+<div class="toc">
+  <strong>목차</strong>
+  <ol>
+    <li><a href="#s1">분석 목적과 핵심 질문</a></li>
+    <li><a href="#s2">v1.2에서 달라지는 점</a></li>
+    <li><a href="#s3">분석 기간과 대상</a></li>
+    <li><a href="#s4">지표 정의</a></li>
+    <li><a href="#s5">모듈 A — 법회출석의 시기별 구조</a></li>
+    <li><a href="#s6">모듈 B — 입교의 시기별 구조</a></li>
+    <li><a href="#s7">모듈 C — 6대 특별행사의 영향 <span class="tag r" style="margin-left:4px">신규</span></a></li>
+    <li><a href="#s8">코로나 전 비교의 취급 방식</a></li>
+    <li><a href="#s9">이미 확인된 리스크와 처리 방침</a></li>
+    <li><a href="#s10">검증 계획</a></li>
+    <li><a href="#s11">산출물과 작업 순서</a></li>
+  </ol>
+</div>
+
+<h2 id="s1">1. 분석 목적과 핵심 질문</h2>
+
+<p>코로나 이후 4년(원기107~110년) 동안 경기인천교구의 교화가 <strong>어떤 리듬으로 움직이고 있는지</strong>를 월·계절·분기 단위로 파악하고, 6대 특별행사가 <strong>법회 출석과 입교 각각에</strong> 얼마나 기여하는지를 계량합니다.</p>
+
+<table>
+  <tr><th class="c" style="width:50px">번호</th><th>핵심 질문</th><th style="width:130px">답하는 모듈</th></tr>
+  <tr><td class="c">Q1</td><td>코로나 이후 4년간 법회 출석은 <strong>늘고 있나 줄고 있나 멈춰 있나?</strong></td><td>모듈 A</td></tr>
+  <tr><td class="c">Q2</td><td>1년 중 <strong>언제 사람이 모이고 언제 빠지는가?</strong> 그 리듬이 4년 사이에 바뀌었는가?</td><td>모듈 A</td></tr>
+  <tr><td class="c">Q3</td><td>입교는 어느 시기에 일어나는가? 출석의 리듬과 <strong>같은가 다른가?</strong></td><td>모듈 B</td></tr>
+  <tr><td class="c">Q4</td><td>6대 행사는 지금도 <strong>평소보다 많은 사람을 모으는가?</strong> 행사별로 힘이 다른가?</td><td>모듈 C</td></tr>
+  <tr><td class="c">Q5</td><td>행사에 온 사람이 <strong>입교로 이어지는가?</strong> 어떤 행사가 그런가?</td><td>모듈 C <span class="tag r">신규</span></td></tr>
+  <tr><td class="c">Q6</td><td>4년째 정체라면 <strong>그 정체를 만드는 것은 무엇인가?</strong></td><td>종합</td></tr>
+</table>
+
+<div class="blue">
+<strong>Q5가 이번 분석의 새로운 축입니다</strong><br>
+기존 분석은 행사가 <em>출석</em>에 미친 영향만 봤습니다. 그러나 교화의 관점에서 더 중요한 것은 <strong>"행사에 온 사람이 교도가 되는가"</strong>입니다. 사람은 많이 오는데 입교로 이어지지 않는다면, 행사는 <em>동원 행사</em>일 뿐 <em>교화 행사</em>가 아닙니다.<br>
+이 분석은 입교 날짜가 일 단위로 기록되어 있고(코로나 이후 993명 전원) 행사 날짜도 교당별로 특정되므로 <strong>기술적으로 가능</strong>합니다.
+</div>
+
+<h2 id="s2">2. v1.2에서 달라지는 점</h2>
+
+<table>
+  <tr><th style="width:150px">항목</th><th style="width:36%">v1.2 (기존)</th><th>v2.0 (이번)</th></tr>
+  <tr>
+    <td><strong>분석 기간</strong></td>
+    <td>원기100~110 (11년)<br>3구간 비교</td>
+    <td><strong>원기107~110 (4년)</strong><br>기간 내부의 변화에 집중</td>
+  </tr>
+  <tr>
+    <td><strong>기준점(분모)</strong></td>
+    <td>코로나 전(원기100~104) 평균</td>
+    <td><strong>원기107년 또는 4년 평균</strong><br>코로나 전은 각주로만</td>
+  </tr>
+  <tr>
+    <td><strong>대표 지표</strong></td>
+    <td>회복률 <span class="small">(코로나 전 대비 %)</span></td>
+    <td><strong>연도별 증감률·계절지수·행사 배수</strong></td>
+  </tr>
+  <tr>
+    <td><strong>시간 해상도</strong></td>
+    <td>회복기 4년 = <strong>1개 평균값</strong><br><span class="small">원기107년과 110년이 섞임</span></td>
+    <td><strong>원기107·108·109·110 각각</strong><br><span class="small">4년 내부 변화를 그대로 표시</span></td>
+  </tr>
+  <tr>
+    <td><strong>행사 분석</strong></td>
+    <td>출석 영향만</td>
+    <td>출석 영향 + <strong>입교 전환 영향</strong></td>
+  </tr>
+  <tr>
+    <td><strong>진단의 성격</strong></td>
+    <td>"코로나 충격에서 얼마나 회복했나"</td>
+    <td><strong>"지금 교화가 어떤 상태인가"</strong></td>
+  </tr>
+</table>
+
+<div class="note">
+<strong>왜 시간 해상도가 중요한가 — 실제 사례</strong><br>
+기존 보고서는 3월 출석을 <strong>"5,152명(회복률 72.2%)"</strong> 한 줄로 적었습니다. 그런데 그 안을 열면 이렇습니다.
+<table style="margin-top:10px;background:transparent">
+  <tr><th class="c">월</th><th class="num">원기107</th><th class="num">108</th><th class="num">109</th><th class="num">110</th><th class="num">4년 변화</th></tr>
+  <tr style="background:var(--ok-l)"><td class="c">3월</td><td class="num">3,541</td><td class="num">5,367</td><td class="num">5,769</td><td class="num">5,866</td><td class="num"><strong>+66%</strong></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">10월</td><td class="num">5,359</td><td class="num">4,615</td><td class="num">5,106</td><td class="num">4,061</td><td class="num" style="color:var(--warn)"><strong>−24%</strong></td></tr>
+</table>
+같은 "회복기"인데 3월은 66% 늘었고 10월은 24% 줄었습니다. <strong>정반대로 움직이는 두 달을 평균 하나로 뭉개면 아무것도 보이지 않습니다.</strong> 월별 변동폭은 평균 23%, 3월은 44%에 이릅니다.
+</div>
+
+<h2 id="s3">3. 분석 기간과 대상</h2>
+
+<table>
+  <tr><th style="width:130px">항목</th><th>내용</th></tr>
+  <tr><td><strong>주 분석 기간</strong></td><td><strong>원기107~110년 (2022~2025)</strong> — 거리두기 전면 해제(2022년 4월) 이후 4년</td></tr>
+  <tr><td><strong>참고 기간</strong></td><td>원기100~104년(코로나 전)·105~106년(코로나기) — <strong>각주와 부록에만</strong> 표기</td></tr>
+  <tr><td><strong>교당</strong></td><td><strong>일반 교당 43곳</strong> — 정규 교당 44곳에서 <strong>번개교당을 제외</strong>. 추이 산출은 <strong>균형패널 42곳</strong>(원기109년 신설인 경기판교교당 추가 제외). 부개교당(원기103년까지 기록 후 폐소)은 애초에 정규교당 44곳에 포함되지 않음</td></tr>
+  <tr><td><strong>법회</strong></td><td>정례법회 5종(일반·청년·학생·대학생·어린이) + 4축2재 6종</td></tr>
+  <tr><td><strong>사람</strong></td><td>교도 + 신도 (전무출신 제외), 교도·신도 분리 병기</td></tr>
+  <tr><td><strong>법회 방식</strong></td><td>대면(<code>법회방법 = 교당</code>)만. <strong>단 원기110년에도 출석의 9.2%가 비대면</strong>이므로, 모듈 A에 비대면 계열을 <strong>별도 표로 병기</strong>한다 <span class="small">(v1.2에서는 부록으로 밀어 두었으나, 코로나 이후 분석에서는 이것이 현재 운영 형태이므로 본문으로 올림)</span></td></tr>
+</table>
+
+<h2 id="s4">4. 지표 정의</h2>
+
+<table>
+  <tr><th style="width:170px">지표</th><th>계산식과 읽는 법</th></tr>
+  <tr><td><strong>출석 연인원</strong></td><td><code>교도남+교도여+신도남+신도여</code>의 합. 같은 사람이 열 번 오면 열 명</td></tr>
+  <tr><td><strong>개최 횟수</strong></td><td>법회 건수</td></tr>
+  <tr><td><strong>1회당 인원</strong></td><td><code>연인원 ÷ 개최 횟수</code></td></tr>
+  <tr><td><strong>연도별 증감률</strong></td><td><code>(당해 − 전년) ÷ 전년 × 100</code> — <strong>v2.0의 대표 지표</strong></td></tr>
+  <tr><td><strong>계절지수</strong></td><td><code>해당 계절 값 ÷ 연평균</code>. 1.10이면 평균보다 10% 많음.<br><strong>연도별로 각각 산출</strong>하여 리듬이 바뀌는지 확인</td></tr>
+  <tr><td><strong>행사 동원 배수</strong><br><span class="small">출석 기준</span></td><td><code>행사 당일 출석 ÷ 같은 교당·같은 해 일반법회 평균 출석</code><br>교당 규모 차이를 없애고 행사 자체의 힘만 잽니다</td></tr>
+  <tr><td><strong>행사 입교 배수</strong><br><span class="tag r">신규</span></td><td>아래 §7-2 참조. <strong>행사일 ±7일 실제 입교 ÷ 평상시 기대 입교</strong></td></tr>
+  <tr><td><strong>신도 비율</strong></td><td><code>신도 ÷ (교도+신도) × 100</code>. 새 사람 유입의 대리 지표</td></tr>
+</table>
+
+<div class="warn">
+<strong>회복률은 이번 보고서의 대표 지표가 아닙니다</strong><br>
+회복률(코로나 전 대비 %)은 <strong>각주와 §8의 참고 표에만</strong> 등장합니다. 본문의 판단은 <strong>원기107년 대비 증감</strong>과 <strong>4년 추세</strong>로 내립니다.
+</div>
+
+<h2 id="s5">5. 모듈 A — 법회출석의 시기별 구조</h2>
+
+<h3>A-1. 4년 추세 (연 단위)</h3>
+<ul>
+  <li>원기107~110 각 연도의 <strong>개최 횟수 · 출석 연인원 · 1회당 인원 · 교도/신도</strong> 산출</li>
+  <li><strong>전년 대비 증감률</strong>로 추세 판정: 상승 / 정체 / 하락 중 어느 국면인지 명시</li>
+  <li>정체라면 <strong>개최 횟수와 1회당 인원 중 무엇이 묶여 있는지</strong> 분해</li>
+</ul>
+
+<h3>A-2. 월별 (4년 × 12개월)</h3>
+<ul>
+  <li>연도별 월 출석표를 <strong>4개 열로 나란히</strong> 제시(평균으로 합치지 않음)</li>
+  <li><strong>원기110 ÷ 원기107</strong>로 4년간 각 월이 얼마나 변했는지 산출 → <strong>상승하는 달과 하락하는 달을 분리</strong></li>
+  <li>월별 변동폭(최대−최소 ÷ 평균)을 함께 표기해 <strong>안정한 달과 불안정한 달</strong>을 구분</li>
+</ul>
+
+<h3>A-3. 계절별</h3>
+<ul>
+  <li>봄(3~5)·여름(6~8)·가을(9~11)·겨울(12~2). 12월은 다음 해 겨울로 귀속하고 표에 명기</li>
+  <li><strong>계절지수를 연도별로 4개</strong> 산출 → 계절 리듬이 고정되어 있는지 움직이는지 확인</li>
+</ul>
+
+<h3>A-4. 분기별</h3>
+<ul>
+  <li>Q1~Q4 × 4년 = 16개 분기 시계열</li>
+  <li>분기별 4년 추세선으로 <strong>어느 분기가 살아나고 어느 분기가 죽고 있는지</strong> 판정</li>
+</ul>
+
+<h3>A-5. 비대면 법회 <span class="tag">본문 승격</span></h3>
+<ul>
+  <li>원기107~110 연도별 화상·영상 비중과 출석을 <strong>별도 표로 본문에 제시</strong></li>
+  <li>대면만 센 본문 수치와 <strong>비대면 포함 수치를 나란히</strong> 놓아 실제 참여 규모를 보여줌</li>
+</ul>
+
+<h3>A-6. 법회 종류별·교당별</h3>
+<ul>
+  <li>정례 5종 각각의 4년 추세와 <strong>개최 교당 수 변화</strong></li>
+  <li>교당·급지·지구별 4년 증감 — <strong>늘고 있는 교당과 줄고 있는 교당의 분리</strong></li>
+</ul>
+
+<h2 id="s6">6. 모듈 B — 입교의 시기별 구조</h2>
+
+<p>모듈 A와 <strong>같은 시간 축</strong>(월·계절·분기)으로 산출하여 두 지표의 리듬을 겹쳐 볼 수 있게 합니다.</p>
+
+<ul>
+  <li><strong>연도별</strong> 입교자 수와 전년 대비 증감 (원기107~110)</li>
+  <li><strong>월별</strong> — 4년 각각 + 4년 합계. 어느 달에 입교가 몰리는지</li>
+  <li><strong>계절별·분기별</strong> — 계절지수를 연도별로 산출</li>
+  <li><strong>성별·연령대별</strong> 4년 추세</li>
+  <li><strong>교당·급지·지구별</strong> 4년 추세</li>
+  <li><strong>출석 리듬과의 대조</strong> — 출석이 높은 달에 입교도 많은가? 두 리듬이 어긋나는 달은 어디인가?</li>
+</ul>
+
+<div class="note">
+<strong>모듈 A와 B를 겹쳐 보는 것이 이 분석의 핵심 설계입니다</strong><br>
+출석이 많은 달에 입교도 많다면 <em>"사람이 오면 교도가 된다"</em>는 뜻이고, 어긋난다면 <em>"오는 것과 들어오는 것은 다른 문제"</em>라는 뜻입니다. 후자라면 출석을 늘리는 정책만으로는 입교가 늘지 않습니다.
+</div>
+
+<h2 id="s7">7. 모듈 C — 6대 특별행사의 영향 <span class="tag r">신규 설계</span></h2>
+
+<h3>7-1. 출석 영향</h3>
+<table>
+  <tr><th style="width:150px">산출 항목</th><th>내용</th></tr>
+  <tr><td>개최 현황</td><td>행사별 연도별 개최 건수·개최 교당 수 (44곳 중 몇 곳이 지내는가)</td></tr>
+  <tr><td>출석 규모</td><td>행사별 연도별 총 출석·1회당 인원</td></tr>
+  <tr><td><strong>동원 배수</strong></td><td><code>행사 출석 ÷ 같은 교당·같은 해 일반법회 평균</code>의 중앙값<br>연도별로 산출해 <strong>행사의 힘이 커지는지 작아지는지</strong> 확인</td></tr>
+  <tr><td>4년 추세</td><td>행사별로 <strong>강화·유지·약화</strong> 판정</td></tr>
+</table>
+
+<h3>7-2. 입교 전환 영향 <span class="tag r">이번 분석의 신규 항목</span></h3>
+
+<p>행사가 <strong>새 교도를 만들어내는가</strong>를 측정합니다. 방법은 다음과 같습니다.</p>
+
+<div class="formula">
+<strong>① 관측값</strong> — 각 행사 개최 건(교당 × 날짜)마다, <strong>같은 교당</strong>에서 <strong>행사일 ±7일</strong> 안에 입교한 사람 수를 셉니다<br><br>
+<strong>② 기대값</strong> — 그 교당의 <strong>해당 연도 총 입교자 × (15일 ÷ 365일)</strong><br>
+<span class="small">= 입교가 1년 내내 고르게 일어난다면 이 15일 창에 몇 명이 들어왔을지</span><br><br>
+<strong>③ 입교 배수</strong> = 관측값 ÷ 기대값<br>
+<span class="small">1.0이면 평상시와 같음(행사 효과 없음) · 1.5면 평소의 1.5배 · 0.6이면 <strong>오히려 평소보다 적음</strong></span>
+</div>
+
+<p>보조 지표로 <strong>±3일·±14일 창</strong>도 함께 산출해, 효과가 행사 당일에 몰리는지 그 뒤로 퍼지는지 확인합니다.</p>
+
+<div class="warn">
+<strong>반드시 함께 수행할 강건성 검사</strong><br>
+이 지표는 <strong>단체 입교 한 건에 크게 흔들립니다.</strong> 실제로 시험 계산에서 법인절 배수가 2.00으로 가장 높게 나왔는데, 확인해 보니 <strong>산본교당에서 2025년 8월 25일 하루에 35명이 한꺼번에 입교한 단 한 건</strong>이 만든 값이었습니다. 이를 제외하면 <strong>0.81로 뒤집힙니다.</strong><br><br>
+따라서 모든 행사에 대해 아래를 의무적으로 수행하고 보고서에 명시합니다.
+<ol style="margin-bottom:0">
+  <li><strong>집중도 검사</strong> — 상위 3개 (교당×날짜)가 전체의 몇 %를 차지하는가. <strong>50% 초과면 경고 표기</strong></li>
+  <li><strong>단체 입교 식별</strong> — 하루 10명 이상 입교 건을 별도 표기하고 <strong>제외 전후 두 값을 병기</strong></li>
+  <li><strong>발생 교당 수</strong> — 몇 개 교당에서 나타나는 현상인지 표기</li>
+  <li><strong>표본 하한</strong> — 관측값 10건 미만이면 배수를 제시하지 않고 실제 건수만 표기</li>
+</ol>
+</div>
+
+<h3>7-3. 행사별 부연 서술 의무</h3>
+<p>기존 계획서에서 확정한 두 건은 그대로 유지합니다.</p>
+<ul>
+  <li><strong>명절대재</strong> — 코로나 이후에도 개최 교당이 <strong>3~4곳</strong>뿐입니다. 이 수치는 행사 규모가 아니라 <strong>입력 성실도</strong>를 재고 있음을 반드시 병기하고, <strong>회복률로 제시하지 않습니다</strong></li>
+  <li><strong>음력 기준 행사</strong> — 석존성탄절(음 4월 8일)과 명절대재(음 12월 1일)는 양력 월이 해마다 이동합니다. <strong>실제 법회 날짜로 월을 귀속</strong>하고 "5월 행사"·"12월 행사"로 고정하지 않습니다</li>
+</ul>
+
+<h2 id="s8">8. 코로나 전 비교의 취급 방식</h2>
+
+<div class="ok">
+<strong>삭제하지 않고 각주로 남깁니다.</strong> 코로나 전 수치가 없으면 독자가 <em>"지금 이 수준이 원래 수준인가"</em>를 판단할 근거를 잃기 때문입니다. 다만 <strong>본문의 논지를 이끌지 않도록</strong> 아래 규칙으로 제한합니다.
+</div>
+
+<table>
+  <tr><th class="c" style="width:44px">#</th><th style="width:190px">규칙</th><th>내용</th></tr>
+  <tr><td class="c">1</td><td><strong>본문 표에 넣지 않는다</strong></td><td>월별·계절별·분기별 표는 <strong>원기107~110 네 개 열만</strong>으로 구성. 코로나 전 열을 추가하지 않음</td></tr>
+  <tr><td class="c">2</td><td><strong>각주로 한 줄</strong></td><td>필요한 곳에 <code>※ 참고: 코로나 전(원기100~104) 연평균은 ○○이며 현재는 그 ○○% 수준</code> 형식으로 표기</td></tr>
+  <tr><td class="c">3</td><td><strong>부록에 전체 표</strong></td><td>코로나 전·코로나기 수치 일람을 <strong>부록 1개 표</strong>로 모아 제공. 본문에서 필요하면 참조</td></tr>
+  <tr><td class="c">4</td><td><strong>제목·요약에 쓰지 않는다</strong></td><td>보고서 제목, 요약, 결론에 회복률을 대표 수치로 쓰지 않음</td></tr>
+  <tr><td class="c">5</td><td><strong>예외 — 구조 변화</strong></td><td>어린이·학생법회 개최 교당 감소처럼 <strong>코로나 전과 비교해야만 의미가 통하는 항목</strong>은 본문에 두되, 그 이유를 밝힘</td></tr>
+</table>
+
+<h2 id="s9">9. 이미 확인된 리스크와 처리 방침</h2>
+
+<p>1단계 데이터 감사에서 확인된 사항이며, v2.0에서도 그대로 적용합니다.</p>
+
+<table>
+  <tr><th class="c" style="width:44px">#</th><th style="width:180px">리스크</th><th>처리</th></tr>
+  <tr><td class="c">1</td><td><strong>단체 입교</strong></td><td>모듈 C의 최대 위협. §7-2의 강건성 검사 4종 의무 수행</td></tr>
+  <tr><td class="c">2</td><td><strong>법회 미입력</strong></td><td>기록이 없을 때 미개최인지 미입력인지 구분 불가. 명절대재가 대표 사례. <strong>개최 교당 수를 항상 병기</strong>해 독자가 판단할 수 있게 함</td></tr>
+  <tr><td class="c">3</td><td><strong>생년월일 이상치</strong></td><td>코로나 이후 입교 중 이상치는 연령 분석에서만 제외하고 <strong>총량에는 포함</strong>. 연도별 유효 표본수 병기</td></tr>
+  <tr><td class="c">4</td><td><strong>입교일 더미값</strong></td><td>원기107~110년 일반 교당 43곳에서 <strong>5건(0.5%)</strong>뿐이므로 포함. 사실만 각주 표기<br><span class="small">전 기간(원기100~110)으로 넓히면 22건</span></td></tr>
+  <tr><td class="c">5</td><td><strong>표본이 작은 항목</strong></td><td>대학생법회·명절대재 등은 <strong>비율이 아니라 실제 건수로</strong> 제시. 부연 서술 의무</td></tr>
+  <tr><td class="c">6</td><td><strong>교도번호 자릿수</strong></td><td>교도정보 파일의 앞자리 0 유실 → <code>zfill(11)</code> 정규화 후 조인(매칭률 99.3%)</td></tr>
+</table>
+
+<h2 id="s10">10. 검증 계획</h2>
+
+<table>
+  <tr><th class="c" style="width:44px">#</th><th style="width:160px">방법</th><th>내용 / 합격 기준</th></tr>
+  <tr><td class="c">V1</td><td>원자료 재계산 대조</td><td>보고서의 모든 수치를 원자료에서 독립적으로 재계산. <strong>불일치 0건</strong>이어야 통과</td></tr>
+  <tr><td class="c">V2</td><td>강건성 검사</td><td>모듈 C 전 행사에 대해 집중도·단체 입교·발생 교당 수 확인. <strong>결과가 뒤집히는 항목은 두 값 병기</strong></td></tr>
+  <tr><td class="c">V3</td><td>내부 일관성</td><td>월별 합 = 계절별 합 = 분기별 합 = 연도 합. 상호참조가 가리키는 장 확인</td></tr>
+  <tr><td class="c">V4</td><td>원티스 공식 집계 대조</td><td>연도별 집계 PDF와 대조. 본문 필터(대면만·정례5종)와 정의가 달라 <strong>검증 전용 계열</strong>을 별도 산출</td></tr>
+</table>
+
+<h2 id="s11">11. 산출물과 작업 순서</h2>
+
+<h3>11-1. 산출물</h3>
+<table>
+  <tr><th style="width:330px">파일명</th><th>내용</th></tr>
+  <tr><td><code>postcovid_current_state_report.html</code></td><td><strong>본 보고서</strong> — 회복 이후의 4년</td></tr>
+  <tr><td><code>analysis_plan_postcovid_current_state.html</code></td><td>본 계획서</td></tr>
+  <tr><td><code>event_conversion.csv</code></td><td>행사별 입교 전환 원자료 — 관측·기대·배수·강건성 지표</td></tr>
+  <tr><td><code>temple_master.csv</code></td><td>교당 마스터(정규 44 / 폐소 1 / 기관·기타 10), 지구·급지 포함</td></tr>
+  <tr><td><code>balanced_panel_temples.csv</code></td><td>균형패널 목록(파일 43행). <strong>본 분석의 균형패널은 여기서 번개교당을 뺀 42곳</strong></td></tr>
+  <tr><td><code>stage1/core_panel.pkl</code> · <code>gyodo_raw.pkl</code></td><td>정제 완료 패널(출석·교도). 월·계절·분기 집계는 이 파일에서 재현</td></tr>
+  <tr><td><span class="small">코로나 전 참고표</span></td><td>별도 파일 없이 <strong>보고서 부록 17-2 표</strong>로 제공</td></tr>
+</table>
+
+<h3>11-2. 작업 순서</h3>
+<table>
+  <tr><th class="c" style="width:60px">단계</th><th style="width:230px">작업</th><th>완료 기준</th></tr>
+  <tr><td class="c">1</td><td>패널 재구성 <span class="tag g">완료</span></td><td>원기107~110 월·계절·분기 패널 생성 — 완료</td></tr>
+  <tr><td class="c">2</td><td>모듈 A·B 산출 <span class="tag g">완료</span></td><td>출석·입교의 연도별 월/계절/분기표 — 완료</td></tr>
+  <tr><td class="c">3</td><td>모듈 C 산출 <span class="tag g">완료</span></td><td>동원 배수·입교 배수 + 강건성 검사 — 완료<br><span class="small">법인절 단체 입교 1건 식별하여 보정값 확보</span></td></tr>
+  <tr><td class="c">4</td><td>보고서 작성</td><td>본문 표에 코로나 전 열이 없을 것 · 모든 행사에 강건성 표기가 있을 것</td></tr>
+  <tr><td class="c">5</td><td>교차검증</td><td>V1~V3 통과. 불일치 발견 시 전량 수정 후 재검증</td></tr>
+</table>
+
+<div class="note">
+<strong>1~3단계는 이미 완료되었습니다.</strong> 기존 분석에서 원자료 정제·교당 매핑·검증을 마쳤기 때문에 <strong>새로 데이터를 뽑을 필요가 없습니다.</strong> 같은 원자료를 다른 단위로 다시 집계하는 작업이며, 실제로 신규 계산이 필요했던 것은 <strong>모듈 C의 입교 전환 분석 하나</strong>였습니다.
+</div>
+
+<hr>
+<p class="small" style="text-align:center;color:var(--sub)">
+경기인천교구 교화 분석 · 실행 계획서 v2.1 「회복 이후의 4년」 · 2026년 8월 4일<br>
+분석 기간 원기107~110(2022~2025) · 코로나 전 비교는 각주·부록으로 제한
+</p>
+
+</div></body></html>
