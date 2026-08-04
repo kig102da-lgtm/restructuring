@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회복 이후의 4년 — 법회출석과 입교는 지금 어디에 있나</title>
+<style>
+  :root{--ink:#1a1a1a;--sub:#5c5c5c;--line:#e2ded9;--bg:#faf9f7;--accent:#7a4419;--accent-l:#f3ede6;
+        --warn:#a3341f;--warn-l:#fbeeea;--ok:#2f6b46;--ok-l:#eaf3ee;--blue:#3d5a80;--blue-l:#eaeef4;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-size:15.5px;word-break:keep-all;
+       font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo",sans-serif;}
+  .wrap{max-width:1040px;margin:0 auto;padding:48px 28px 96px;}
+  header.doc{border-bottom:3px solid var(--accent);padding-bottom:22px;margin-bottom:28px;}
+  .eyebrow{font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:700;}
+  h1{font-size:31px;margin:10px 0 10px;line-height:1.32;letter-spacing:-.02em;}
+  .meta{font-size:13px;color:var(--sub);}
+  .part{margin:56px 0 4px;padding:10px 16px;background:var(--accent);color:#fff;border-radius:5px;font-size:15px;font-weight:700;}
+  h2{font-size:21px;margin:34px 0 14px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4;}
+  h3{font-size:16.5px;margin:28px 0 8px;color:var(--accent);}
+  h4{font-size:14.5px;margin:18px 0 6px;}
+  p{margin:10px 0} ul,ol{margin:10px 0 10px 4px;padding-left:20px} li{margin:5px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:#fff}
+  th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:var(--accent-l);font-weight:700;color:var(--accent)}
+  td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+  td.c,th.c{text-align:center;white-space:nowrap}
+  .card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px 20px;margin:14px 0}
+  .warn{background:var(--warn-l);border-left:4px solid var(--warn);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  .warn strong{color:var(--warn)}
+  .ok{background:var(--ok-l);border-left:4px solid var(--ok);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  .ok strong{color:var(--ok)}
+  .note{background:var(--accent-l);border-left:4px solid var(--accent);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  .blue{background:var(--blue-l);border-left:4px solid var(--blue);padding:15px 19px;margin:16px 0;border-radius:0 4px 4px 0}
+  .ref{background:#fff;border:1px dashed #b9b0a4;padding:9px 14px;margin:10px 0;border-radius:4px;font-size:12.5px;color:var(--sub)}
+  .ref b{color:var(--accent)}
+  .bg{background:#f4f1ec;border:1px solid #d8d0c4;border-left:4px solid #8a7f70;padding:12px 17px;margin:14px 0;border-radius:0 4px 4px 0;font-size:13px;color:#3d3833}
+  .bg b{color:#5c5346} .bg .t{font-weight:700;color:#5c5346;display:block;margin-bottom:4px}
+  code{background:#efece7;padding:1px 5px;border-radius:3px;font-size:12.5px;font-family:Consolas,Menlo,monospace}
+  .tag{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;margin-right:6px;vertical-align:2px}
+  .tag.g{background:var(--ok)} .tag.r{background:var(--warn)} .tag.b{background:var(--blue)} .tag.gr{background:#8a8a8a}
+  .small{font-size:12.5px;color:var(--sub);line-height:1.65}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:12px;margin:16px 0}
+  .grid .card{margin:0}
+  .kpi{font-size:28px;font-weight:700;color:var(--accent);line-height:1.15;font-variant-numeric:tabular-nums}
+  .kpi.r{color:var(--warn)} .kpi.g{color:var(--ok)} .kpi.b{color:var(--blue)}
+  .bar{height:9px;background:#e8e3dc;border-radius:5px;overflow:hidden;margin-top:5px}
+  .bar>i{display:block;height:100%;background:var(--accent)}
+  .bar>i.r{background:var(--warn)} .bar>i.g{background:var(--ok)} .bar>i.b{background:var(--blue)}
+  .up{color:var(--ok);font-weight:700} .dn{color:var(--warn);font-weight:700}
+  .toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 24px 18px;font-size:14px}
+  .toc h4{margin:16px 0 6px;font-size:12px;letter-spacing:.1em;color:var(--accent)}
+  .toc ol{margin:0;padding-left:22px} .toc li{margin:3px 0}
+  .toc a{color:var(--ink);text-decoration:none}
+  .term{display:grid;grid-template-columns:120px 1fr;gap:4px 14px;font-size:13.5px;margin:10px 0}
+  .term dt{font-weight:700;color:var(--accent)} .term dd{margin:0}
+  hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+  @media(max-width:640px){.wrap{padding:26px 14px 60px}h1{font-size:23px}.term{grid-template-columns:1fr}}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="doc">
+  <div class="eyebrow">경기인천교구 교화 분석 · 종합보고서</div>
+  <h1>회복 이후의 4년<br><span style="font-size:20px;color:var(--sub);font-weight:400">법회출석과 입교는 지금 어디에 있나</span></h1>
+  <div class="meta">경기인천교구 일반 교당 43곳 · 원기107~110년(2022~2025) · 2026년 8월 4일<br>
+  법회출석 정례법회 9,268건 · 4축2재 712건 · 입교 993명</div>
+</header>
+
+<div class="ref">
+<b>이 보고서의 기준점에 대하여</b> — 코로나 전과의 비교가 아니라 <b>코로나 이후 4년 안에서 무엇이 움직였는지</b>를 봅니다. 거리두기가 전면 해제된 2022년(원기107)부터 지난해(원기110)까지가 대상입니다. 코로나 전 수치는 <b>각주와 부록 참고표</b>로 남겼습니다.
+</div>
+
+<div class="bg">
+<span class="t">번개교당은 모든 집계에서 제외했습니다</span>
+번개교당은 <b>군법회 중심의 특수 교당</b>으로, 일반 교당과 교화 구조가 달라 함께 집계하면 교구 전체 수치가 왜곡됩니다. 코로나 이후 4년간 정례법회 415건 중 <b>331건이 군법회</b>이며 일반법회는 한 건도 없습니다.<br>
+따라서 본 보고서의 모든 비율·추세는 <b>번개교당을 뺀 일반 교당 43곳</b>(출석 추세는 균형패널 42곳) 기준입니다. 번개교당 자체 수치는 <b>각 장 끝에 회색 상자로 따로</b> 실었습니다.
+</div>
+
+<div class="toc">
+  <h4>1부 · 지금 어디에 있나</h4>
+  <ol>
+    <li><a href="#s1">한눈에 보는 결론</a></li>
+    <li><a href="#s2">이 보고서를 읽는 기준</a></li>
+    <li><a href="#s3">각 장이 서로 어떻게 이어지나</a></li>
+  </ol>
+  <h4>2부 · 법회 출석</h4>
+  <ol start="4">
+    <li><a href="#s4">4년 추세 — 올라온 뒤 멈췄다</a></li>
+    <li><a href="#s5">월별 — 살아나는 달과 죽어가는 달</a></li>
+    <li><a href="#s6">계절과 분기 — 리듬은 어떻게 바뀌었나</a></li>
+    <li><a href="#s7">비대면 법회 — 줄고 있지만 사라지지 않았다</a></li>
+    <li><a href="#s8">법회 종류별 — 청소년 법회가 살아나고 있다</a></li>
+    <li><a href="#s9">교당·급지·지구별 — 31곳은 늘고 9곳은 줄었다</a></li>
+  </ol>
+  <h4>3부 · 입교</h4>
+  <ol start="10">
+    <li><a href="#s10">4년 추세와 시기별 구조</a></li>
+    <li><a href="#s11">출석과 입교의 리듬은 정반대로 간다</a></li>
+  </ol>
+  <h4>4부 · 6대 특별행사</h4>
+  <ol start="12">
+    <li><a href="#s12">행사는 사람을 모으는가</a></li>
+    <li><a href="#s13">행사는 교도를 만드는가</a></li>
+  </ol>
+  <h4>5부 · 종합</h4>
+  <ol start="14">
+    <li><a href="#s14">종합 진단 — 정체의 정체</a></li>
+    <li><a href="#s15">실행 과제</a></li>
+    <li><a href="#s16">이 보고서의 한계</a></li>
+    <li><a href="#s17">부록 — 번개교당 · 코로나 전 참고표 · 용어</a></li>
+  </ol>
+</div>
+
+<!-- ======= 1부 ======= -->
+<div class="part">1부 · 지금 어디에 있나</div>
+
+<h2 id="s1">1. 한눈에 보는 결론</h2>
+
+<div class="grid">
+  <div class="card"><div class="small">출석 4년 변화<br><span style="font-size:11px">원기107 → 110</span></div><div class="kpi g">+7.8%</div><div class="small">54,698 → 58,980명</div></div>
+  <div class="card"><div class="small">최근 3년 연평균</div><div class="kpi">+0.1%</div><div class="small">108년 이후 사실상 정지</div></div>
+  <div class="card"><div class="small">입교 4년 변화</div><div class="kpi g">+41.9%</div><div class="small">203 → 288명</div></div>
+  <div class="card"><div class="small">입교로 이어지는 행사</div><div class="kpi b">2<span style="font-size:16px">/6</span></div><div class="small">대각개교절·석존성탄절</div></div>
+</div>
+
+<h3>네 문장으로 요약하면</h3>
+
+<div class="note">
+<p style="margin-top:0"><strong>첫째, 출석은 원기108년에 올라온 뒤 3년째 멈춰 있습니다.</strong><br>
+원기107년 54,698명에서 108년 58,863명으로 <span class="up">+7.6%</span> 올랐지만, 그 뒤로는 <span class="dn">−0.9%</span> → <span class="up">+1.1%</span>입니다. 최근 3년간 연평균 변화가 <strong>+0.1%</strong>로, 늘지도 줄지도 않는 상태입니다.</p>
+
+<p><strong>둘째, 그런데 그 정체 안에서는 달마다 정반대로 움직이고 있습니다.</strong><br>
+3월은 4년간 <span class="up">+66%</span> 늘었고 10월은 <span class="dn">−24%</span> 줄었습니다. 9월도 <span class="up">+43%</span> 늘었는데 5월은 <span class="dn">−20%</span> 줄었습니다. <strong>전체가 멈춘 게 아니라, 오르는 달과 내리는 달이 서로 상쇄되어 멈춘 것처럼 보이는 것</strong>입니다.</p>
+
+<p><strong>셋째, 입교는 출석보다 훨씬 빠르게 늘고 있습니다.</strong><br>
+203 → 196 → 306 → 288명으로 4년간 <strong>42% 늘었습니다.</strong> 다만 원기109년에 크게 뛴 뒤(+56.1%) 지난해 다시 5.9% 줄어, 추세인지 판단하려면 올해 자료가 필요합니다.</p>
+
+<p style="margin-bottom:0"><strong>넷째, 6개 행사 중 입교로 이어지는 것은 둘뿐입니다.</strong><br>
+대각개교절(1.72배)과 석존성탄절(1.76배)은 행사 전후에 평소보다 확실히 많은 입교가 일어납니다. 반면 <strong>신정절은 0.71배로 평소보다 오히려 적습니다.</strong> 사람은 모이는데(동원 1.11배) 교도로는 이어지지 않습니다.</p>
+</div>
+
+<div class="ref">
+<b>※ 참고</b> — 코로나 전(원기100~104) 연평균 출석은 77,491명, 입교는 511명이었습니다. 현재는 각각 그 <b>76.1%</b>, <b>56.3%</b> 수준입니다. 자세한 비교는 <a href="#s17">부록 17-2</a>에 있습니다.
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외</span>
+위 수치는 모두 번개교당을 뺀 값입니다. <b>번개교당의 같은 기간 실적:</b> 군법회 331건·출석 4,172명, 어린이법회 84건·출석 927명, <b>입교 231명</b>. 번개교당을 포함한 교구 전체 입교 1,224명의 <b>18.9%</b>에 해당하는 큰 규모입니다.
+</div>
+
+<h2 id="s2">2. 이 보고서를 읽는 기준</h2>
+
+<table>
+  <tr><th style="width:130px">항목</th><th>기준</th></tr>
+  <tr><td><strong>기간</strong></td><td>원기107~110년(2022~2025). 거리두기 전면 해제(2022년 4월) 이후 4년</td></tr>
+  <tr><td><strong>기준점</strong></td><td><strong>원기107년</strong> 또는 4년 평균. 코로나 전 대비 '회복률'은 본문 판단에 쓰지 않습니다</td></tr>
+  <tr><td><strong>교당</strong></td><td><strong>번개교당을 제외한 일반 교당 43곳.</strong> 출석 추세는 전 기간 기록이 있는 <strong>균형패널 42곳</strong></td></tr>
+  <tr><td><strong>법회</strong></td><td>정례법회 5종(일반·청년·학생·대학생·어린이) + 4축2재 6종. <strong>군법회는 포함하지 않습니다</strong></td></tr>
+  <tr><td><strong>사람</strong></td><td>교도 + 신도(전무출신 제외). 교도는 입교한 소속 구성원, 신도는 아직 입교하지 않은 참여자</td></tr>
+  <tr><td><strong>법회 방식</strong></td><td>본문 수치는 <strong>대면만</strong>. 비대면은 <a href="#s7">7장</a>에 별도 제시</td></tr>
+</table>
+
+<p class="small">주요 용어: <strong>연인원</strong>은 같은 사람이 열 번 오면 열 명으로 세는 방식입니다. <strong>계절지수</strong>는 그 계절 값을 연평균으로 나눈 값으로, 1.10이면 평균보다 10% 많다는 뜻입니다. 나머지 용어는 <a href="#s17">17장</a>에 있습니다.</p>
+
+<h2 id="s3">3. 각 장이 서로 어떻게 이어지나</h2>
+
+<p>이 보고서는 <strong>"멈췄나 → 정말 멈췄나 → 무엇이 움직이나 → 무엇이 사람을 불러오나"</strong> 순으로 파고듭니다.</p>
+
+<table>
+  <tr><th class="c" style="width:60px">장</th><th style="width:180px">답하는 질문</th><th>앞뒤 장과의 관계</th></tr>
+  <tr><td class="c"><strong>4</strong></td><td>4년간 늘었나 줄었나?</td><td>전체 판정을 내립니다. 결론이 <strong>"정체"</strong>로 나오면서 <strong>5~6장</strong>의 "정말 아무 일도 없었나"라는 질문이 생깁니다</td></tr>
+  <tr><td class="c"><strong>5~6</strong></td><td>1년 중 언제 움직이나?</td><td>4장의 '정체'를 월·계절·분기로 쪼갭니다. <strong>오르는 달과 내리는 달이 상쇄</strong>되고 있음이 드러나, 정체가 '아무 일 없음'이 아니라 <strong>'서로 반대 방향의 움직임'</strong>임을 밝힙니다</td></tr>
+  <tr><td class="c"><strong>7</strong></td><td>비대면은 어디까지 왔나?</td><td>본문에서 뺀 화상·영상을 따로 봅니다. 4장의 출석 수치가 <strong>실제 참여의 일부만</strong> 담고 있음을 보정합니다</td></tr>
+  <tr><td class="c"><strong>8</strong></td><td>어떤 법회가 움직이나?</td><td>5~6장의 시간축을 <strong>법회 종류축</strong>으로 바꿉니다. 일반법회가 멈춘 사이 <strong>청년·학생·어린이 법회가 뚜렷이 늘고 있음</strong>이 드러납니다</td></tr>
+  <tr><td class="c"><strong>9</strong></td><td>어느 교당이 움직이나?</td><td>교구 평균 뒤의 격차를 봅니다. <strong>31곳은 늘고 9곳은 줄어</strong> 평균이 만들어졌음을 보입니다</td></tr>
+  <tr><td class="c"><strong>10</strong></td><td>새 사람은 들어오나?</td><td>4~9장이 <em>출석</em>이라면 여기부터는 <em>입교</em>입니다. <strong>같은 시간축</strong>(월·계절·분기)으로 산출해 11장에서 겹쳐 볼 수 있게 합니다</td></tr>
+  <tr><td class="c"><strong>11</strong></td><td>둘은 같이 움직이나?</td><td>4~9장과 10장을 <strong>겹칩니다.</strong> 네 분기 중 <strong>세 분기에서 두 지표가 반대로 움직인다</strong>는 사실이 드러나, "출석을 늘리면 입교도 는다"는 전제를 무너뜨립니다</td></tr>
+  <tr><td class="c"><strong>12~13</strong></td><td>행사는 무엇을 하나?</td><td>12장은 <em>사람을 모으는가</em>(출석), 13장은 <em>교도를 만드는가</em>(입교)를 봅니다. <strong>둘의 순위가 다르다는 것이 이 보고서의 핵심 발견</strong>이며, 11장의 어긋남을 구체적으로 설명해 줍니다</td></tr>
+  <tr><td class="c"><strong>14~16</strong></td><td>무슨 뜻이고 무엇을 할까</td><td>4~13장을 하나의 진단으로 묶고, 과제를 뽑고, 판단 시 유의할 한계를 밝힙니다</td></tr>
+</table>
+
+<!-- ======= 2부 ======= -->
+<div class="part">2부 · 법회 출석</div>
+
+<h2 id="s4">4. 4년 추세 — 올라온 뒤 멈췄다</h2>
+
+<table>
+  <tr><th class="c">원기</th><th class="c" style="width:80px">서기</th><th class="num">법회 횟수</th><th class="num">교도</th><th class="num">신도</th><th class="num">출석 합계</th><th class="num">전년 대비</th><th class="num">1회당</th><th class="num">신도 비율</th></tr>
+  <tr><td class="c">107</td><td class="c">2022</td><td class="num">2,000</td><td class="num">53,440</td><td class="num">1,258</td><td class="num">54,698</td><td class="num">—</td><td class="num">27.3</td><td class="num">2.3%</td></tr>
+  <tr><td class="c">108</td><td class="c">2023</td><td class="num">2,417</td><td class="num">57,275</td><td class="num">1,588</td><td class="num">58,863</td><td class="num up">+7.6%</td><td class="num">24.4</td><td class="num">2.7%</td></tr>
+  <tr><td class="c">109</td><td class="c">2024</td><td class="num">2,407</td><td class="num">56,647</td><td class="num">1,712</td><td class="num">58,359</td><td class="num dn">−0.9%</td><td class="num">24.2</td><td class="num">2.9%</td></tr>
+  <tr style="background:var(--accent-l)"><td class="c"><strong>110</strong></td><td class="c"><strong>2025</strong></td><td class="num"><strong>2,444</strong></td><td class="num"><strong>57,452</strong></td><td class="num"><strong>1,528</strong></td><td class="num"><strong>58,980</strong></td><td class="num up"><strong>+1.1%</strong></td><td class="num"><strong>24.1</strong></td><td class="num"><strong>2.6%</strong></td></tr>
+</table>
+<p class="small">균형패널 42개 교당 · 정례법회 5종 · 대면. 출석 합계는 연인원.</p>
+
+<div class="warn">
+<strong>원기108년이 분기점입니다.</strong><br>
+107년에서 108년으로 갈 때 법회 횟수가 2,000회에서 2,417회로 <strong>21% 늘면서</strong> 출석이 7.6% 증가했습니다. 정상 운영으로 돌아온 시점입니다.<br>
+그런데 <strong>108년 이후로는 법회 횟수가 2,417 → 2,407 → 2,444로 거의 고정</strong>되어 있고, 1회당 인원도 24.4 → 24.2 → 24.1로 움직이지 않습니다. 그 결과 출석 총량이 <strong>3년째 5만8천~5만9천 명 구간에 갇혀</strong> 있습니다.<br><br>
+<strong>즉 지금은 회복 중이 아니라 안정 상태입니다.</strong> 그리고 이 안정은 저절로 깨지지 않습니다.
+</div>
+
+<h3>한 가지 다른 신호 — 신도 비율</h3>
+<p>출석 총량은 멈췄지만 <strong>신도 비율은 2.3% → 2.7% → 2.9%로 올랐다가 원기110년에 2.6%로 다시 내려왔습니다.</strong> 신도는 아직 입교하지 않은 참여자, 곧 새 사람의 유입구입니다. 절대 수로 보면 1,258 → 1,588 → 1,712 → 1,528명으로, <strong>원기109년까지 꾸준히 늘다가 지난해 꺾였습니다.</strong> 이 꺾임이 일시적인지는 올해 자료로 확인해야 합니다.</p>
+
+<div class="ref">
+<b>※ 참고</b> — 코로나 전 연평균 출석은 77,491명, 법회 횟수는 3,102회, 1회당 25.0명, 신도 비율 4.9%였습니다. 현재 <b>출석은 그 76.1%, 횟수는 78.8%</b> 수준이며, <b>1회당 인원은 96.6%로 거의 같습니다.</b>
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당은 위 표에 포함되지 않았습니다. 같은 기간 <b>번개교당의 정례법회는 415건</b>이며, 그중 군법회 331건·어린이법회 84건입니다. <b>일반법회는 0건</b>입니다.
+<table style="margin-top:8px;background:transparent;font-size:12.5px">
+  <tr><th class="c" style="width:110px">원기</th><th class="c">107</th><th class="c">108</th><th class="c">109</th><th class="c">110</th><th class="c">4년 합계</th></tr>
+  <tr><td>군법회 건수</td><td class="c">77</td><td class="c">90</td><td class="c">79</td><td class="c">85</td><td class="c"><b>331</b></td></tr>
+  <tr><td>군법회 출석</td><td class="c">1,109</td><td class="c">925</td><td class="c">1,004</td><td class="c">1,134</td><td class="c"><b>4,172</b></td></tr>
+</table>
+군법회 1회당 출석은 12.6명으로, 일반 교당 정례법회(24.1명)의 절반 수준입니다. 병력 순환이 잦은 군 교화의 특성상 같은 잣대로 비교할 수 없습니다.
+</div>
+
+<h2 id="s5">5. 월별 — 살아나는 달과 죽어가는 달</h2>
+
+<table>
+  <tr><th class="c" style="width:60px">월</th><th class="num">원기107</th><th class="num">108</th><th class="num">109</th><th class="num">110</th><th class="num" style="width:110px">4년 변화<br><span class="small">110÷107</span></th><th style="width:130px"></th></tr>
+  <tr style="background:var(--ok-l)"><td class="c">3월</td><td class="num">3,541</td><td class="num">5,367</td><td class="num">5,769</td><td class="num">5,866</td><td class="num up"><strong>+66%</strong></td><td><div class="bar"><i class="g" style="width:100%"></i></div></td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">9월</td><td class="num">3,738</td><td class="num">4,967</td><td class="num">4,865</td><td class="num">5,364</td><td class="num up"><strong>+43%</strong></td><td><div class="bar"><i class="g" style="width:65%"></i></div></td></tr>
+  <tr><td class="c">11월</td><td class="num">4,701</td><td class="num">4,752</td><td class="num">4,447</td><td class="num">5,556</td><td class="num up">+18%</td><td><div class="bar"><i class="g" style="width:27%"></i></div></td></tr>
+  <tr><td class="c">8월</td><td class="num">4,286</td><td class="num">4,792</td><td class="num">4,538</td><td class="num">5,010</td><td class="num up">+17%</td><td><div class="bar"><i class="g" style="width:26%"></i></div></td></tr>
+  <tr><td class="c">2월</td><td class="num">4,144</td><td class="num">5,326</td><td class="num">3,556</td><td class="num">4,822</td><td class="num up">+16%</td><td><div class="bar"><i class="g" style="width:24%"></i></div></td></tr>
+  <tr><td class="c">12월</td><td class="num">3,656</td><td class="num">3,880</td><td class="num">4,058</td><td class="num">4,062</td><td class="num up">+11%</td><td><div class="bar"><i class="g" style="width:17%"></i></div></td></tr>
+  <tr><td class="c">1월</td><td class="num">4,594</td><td class="num">4,984</td><td class="num">5,823</td><td class="num">4,838</td><td class="num up">+5%</td><td><div class="bar"><i class="g" style="width:8%"></i></div></td></tr>
+  <tr><td class="c">4월</td><td class="num">4,963</td><td class="num">5,569</td><td class="num">5,378</td><td class="num">5,230</td><td class="num up">+5%</td><td><div class="bar"><i class="g" style="width:8%"></i></div></td></tr>
+  <tr><td class="c">6월</td><td class="num">5,072</td><td class="num">5,077</td><td class="num">4,970</td><td class="num">5,191</td><td class="num up">+2%</td><td><div class="bar"><i class="g" style="width:3%"></i></div></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">7월</td><td class="num">5,242</td><td class="num">5,075</td><td class="num">4,551</td><td class="num">4,670</td><td class="num dn">−11%</td><td><div class="bar"><i class="r" style="width:17%"></i></div></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">5월</td><td class="num">5,402</td><td class="num">4,459</td><td class="num">5,298</td><td class="num">4,310</td><td class="num dn"><strong>−20%</strong></td><td><div class="bar"><i class="r" style="width:30%"></i></div></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">10월</td><td class="num">5,359</td><td class="num">4,615</td><td class="num">5,106</td><td class="num">4,061</td><td class="num dn"><strong>−24%</strong></td><td><div class="bar"><i class="r" style="width:36%"></i></div></td></tr>
+</table>
+<p class="small">4년 변화가 큰 순서로 정렬. 막대는 변화폭의 상대 크기입니다.</p>
+
+<div class="blue">
+<strong>4장의 '정체'는 아무 일도 없다는 뜻이 아니었습니다.</strong><br>
+전체 합계는 3년째 제자리인데, 그 안에서 <strong>3월은 66% 늘고 10월은 24% 줄었습니다.</strong> 아홉 달이 오르고 세 달이 내리는데, 내리는 세 달의 낙폭이 커서 서로를 상쇄하고 있습니다.<br><br>
+가장 눈에 띄는 것은 <strong>봄·가을 안에서의 역전</strong>입니다.
+<ul style="margin-bottom:0">
+  <li><strong>3월과 9월</strong>은 원기107년에 각각 3,541명·3,738명으로 <strong>연중 최하위권</strong>이었는데(3월이 최저), 지금은 5,866명·5,364명으로 <strong>상위권</strong>이 되었습니다. 학기가 시작되는 두 달입니다.</li>
+  <li><strong>5월과 10월</strong>은 원기107년에 5,402명·5,359명으로 <strong>연중 최고권</strong>이었는데, 지금은 4,310명·4,061명으로 <strong>최하위권</strong>으로 떨어졌습니다.</li>
+</ul>
+</div>
+
+<div class="warn">
+<strong>10월과 5월의 하락은 주목할 필요가 있습니다.</strong><br>
+두 달은 전통적으로 야외 행사와 나들이가 많은 시기입니다. 원기110년 10월은 4,061명으로 <strong>12월(4,062명)보다도 낮아 연중 최저</strong>가 되었습니다. 12월은 4년 내내 연중 최저권이던 달인데, 10월이 그 아래로 내려간 것은 이례적입니다.<br>
+5월은 석존성탄절이 드는 달인데도 4년간 20% 줄었습니다. <a href="#s12">12장</a>에서 보듯 석존성탄절 자체의 동원력은 6개 행사 중 가장 강한데(1.23배) <strong>그 달 전체는 오히려 줄고 있습니다.</strong> 행사 하루의 힘과 그 달 전체의 흐름이 따로 논다는 뜻입니다.
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당의 월별 출석은 위 표에 포함되지 않았습니다. 같은 기간 <b>번개교당 전체 법회 출석은 7,343명</b>(군법회 4,172 · 어린이 927 · 수시·4축2재 등 2,244)입니다. 군법회는 부대 일정에 따라 열려 <b>일반 교당의 계절·월 리듬과 무관하게 움직입니다.</b>
+</div>
+
+<h2 id="s6">6. 계절과 분기 — 리듬은 어떻게 바뀌었나</h2>
+
+<h3>6-1. 계절별 출석과 계절지수</h3>
+<table>
+  <tr><th class="c" style="width:90px">계절</th><th class="num">원기107</th><th class="num">108</th><th class="num">109</th><th class="num">110</th><th class="num" style="width:90px">4년 변화</th></tr>
+  <tr><td class="c">봄 <span class="small">3~5월</span></td><td class="num">13,906</td><td class="num">15,395</td><td class="num">16,445</td><td class="num">15,406</td><td class="num up">+10.8%</td></tr>
+  <tr><td class="c">여름 <span class="small">6~8월</span></td><td class="num">14,600</td><td class="num">14,944</td><td class="num">14,059</td><td class="num">14,871</td><td class="num up">+1.9%</td></tr>
+  <tr><td class="c">가을 <span class="small">9~11월</span></td><td class="num">13,798</td><td class="num">14,334</td><td class="num">14,418</td><td class="num">14,981</td><td class="num up">+8.6%</td></tr>
+  <tr><td class="c">겨울 <span class="small">12~2월</span></td><td class="num">12,394</td><td class="num">14,190</td><td class="num">13,437</td><td class="num">13,722</td><td class="num up">+10.7%</td></tr>
+</table>
+
+<h4>계절지수 — 연도별로 보면</h4>
+<table>
+  <tr><th class="c" style="width:90px">계절</th><th class="c">원기107</th><th class="c">108</th><th class="c">109</th><th class="c">110</th><th>읽는 법</th></tr>
+  <tr><td class="c">봄</td><td class="c">1.02</td><td class="c">1.05</td><td class="c" style="background:var(--ok-l)"><strong>1.13</strong></td><td class="c">1.04</td><td>가장 높지만 <strong>109년에 튀었다가 되돌아옴</strong></td></tr>
+  <tr><td class="c">여름</td><td class="c">1.07</td><td class="c">1.02</td><td class="c">0.96</td><td class="c">1.01</td><td>평균 수준에서 오르내림</td></tr>
+  <tr><td class="c">가을</td><td class="c">1.01</td><td class="c">0.97</td><td class="c">0.99</td><td class="c">1.02</td><td>4년 내내 <strong>가장 안정적</strong></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">겨울</td><td class="c">0.91</td><td class="c">0.96</td><td class="c">0.92</td><td class="c">0.93</td><td><strong>4년 내내 유일하게 1.0 미만</strong> — 구조적 저점</td></tr>
+</table>
+
+<div class="note">
+<strong>겨울은 4년 내내 한 번도 평균을 넘지 못했습니다.</strong><br>
+계절지수가 0.91~0.96 사이에 갇혀 있습니다. 반면 봄·여름·가을은 해마다 1.0 위아래를 오갑니다. <strong>겨울(12~2월)의 낮은 출석은 그해의 사정이 아니라 고착된 구조</strong>라는 뜻입니다.<br>
+겨울에는 신정절이 있는데도 그렇습니다. <a href="#s13">13장</a>에서 보듯 신정절은 <strong>입교 전환력도 6개 행사 중 최하위(0.71배)</strong>입니다.
+</div>
+
+<h3>6-2. 분기별</h3>
+<table>
+  <tr><th class="c" style="width:80px">분기</th><th class="num">원기107</th><th class="num">108</th><th class="num">109</th><th class="num">110</th><th class="num" style="width:100px">4년 변화</th><th></th></tr>
+  <tr style="background:var(--ok-l)"><td class="c">1분기</td><td class="num">12,279</td><td class="num">15,677</td><td class="num">15,148</td><td class="num">15,526</td><td class="num up"><strong>+26.4%</strong></td><td><div class="bar"><i class="g" style="width:100%"></i></div></td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">3분기</td><td class="num">13,266</td><td class="num">14,834</td><td class="num">13,954</td><td class="num">15,044</td><td class="num up"><strong>+13.4%</strong></td><td><div class="bar"><i class="g" style="width:51%"></i></div></td></tr>
+  <tr><td class="c">4분기</td><td class="num">13,716</td><td class="num">13,247</td><td class="num">13,611</td><td class="num">13,679</td><td class="num dn">−0.3%</td><td><div class="bar"><i class="r" style="width:1%"></i></div></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">2분기</td><td class="num">15,437</td><td class="num">15,105</td><td class="num">15,646</td><td class="num">14,731</td><td class="num dn"><strong>−4.6%</strong></td><td><div class="bar"><i class="r" style="width:17%"></i></div></td></tr>
+</table>
+
+<p><strong>1분기와 3분기가 끌어올리고, 2분기와 4분기가 끌어내리고 있습니다.</strong> 원기107년에는 2분기(15,437명)가 가장 높고 1분기(12,279명)가 가장 낮았는데, 원기110년에는 <strong>1분기(15,526)가 2분기(14,731)를 앞질렀습니다.</strong> 4년 사이 연중 흐름의 앞뒤가 바뀐 셈입니다.</p>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당의 계절·분기 출석은 위 표에 포함되지 않았습니다. 번개교당 군법회는 <b>연간 77~90건으로 4년 내내 거의 일정</b>하여(107년 77 · 108년 90 · 109년 79 · 110년 85건) 뚜렷한 계절 리듬이 없습니다. 부대 훈련·휴가 일정에 따르기 때문으로 보입니다.
+</div>
+
+<h2 id="s7">7. 비대면 법회 — 줄고 있지만 사라지지 않았다</h2>
+
+<p>본문 수치는 대면 법회만 센 값입니다. 화상·영상 법회를 더하면 실제 참여 규모는 이렇습니다.</p>
+
+<table>
+  <tr><th class="c">원기</th><th class="num">대면</th><th class="num">영상</th><th class="num">화상</th><th class="num">전체</th><th class="num" style="width:100px">비대면 비중</th><th></th></tr>
+  <tr><td class="c">107</td><td class="num">54,698</td><td class="num">7,391</td><td class="num">3,138</td><td class="num">65,227</td><td class="num"><strong>16.1%</strong></td><td><div class="bar"><i class="b" style="width:16.1%"></i></div></td></tr>
+  <tr><td class="c">108</td><td class="num">58,863</td><td class="num">4,787</td><td class="num">2,888</td><td class="num">66,538</td><td class="num">11.5%</td><td><div class="bar"><i class="b" style="width:11.5%"></i></div></td></tr>
+  <tr><td class="c">109</td><td class="num">58,464</td><td class="num">4,285</td><td class="num">2,368</td><td class="num">65,117</td><td class="num">10.2%</td><td><div class="bar"><i class="b" style="width:10.2%"></i></div></td></tr>
+  <tr style="background:var(--accent-l)"><td class="c"><strong>110</strong></td><td class="num"><strong>59,565</strong></td><td class="num">3,271</td><td class="num">2,771</td><td class="num"><strong>65,607</strong></td><td class="num"><strong>9.2%</strong></td><td><div class="bar"><i class="b" style="width:9.2%"></i></div></td></tr>
+</table>
+<p class="small">일반 교당 43곳 기준(본문의 균형패널 42곳과 다름). 그래서 대면 수치가 4장 표와 조금 다릅니다.</p>
+
+<div class="blue">
+<strong>비대면은 절반으로 줄었지만 없어지지 않았습니다.</strong><br>
+비중이 16.1% → 9.2%로 내려왔습니다. 그러나 <strong>전체 참여 규모(65,227 → 65,607명)는 4년간 거의 변하지 않았습니다.</strong> 대면이 늘어난 만큼 비대면이 줄어, 총량은 그대로인 채 <strong>참여 방식만 대면으로 되돌아온 것</strong>입니다.<br><br>
+원기110년에도 <strong>6,042명이 비대면으로 참여</strong>했습니다. 코로나기 임시조치가 아니라 <strong>자리를 잡은 하나의 참여 형태</strong>입니다. 4장의 "3년째 정체"라는 판단도, 비대면을 포함해서 보면 <strong>"총 참여 규모는 4년간 유지"</strong>로 조금 달라집니다.
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당은 위 표에 포함되지 않았습니다. 같은 기간 번개교당의 법회 방식은 <b>대면 위주</b>이며(전 기간 기준 교당 784건 · 영상 61건 · 화상 2건), 비대면 비중이 매우 낮습니다.
+</div>
+
+<h2 id="s8">8. 법회 종류별 — 청소년 법회가 살아나고 있다</h2>
+
+<table>
+  <tr><th style="width:80px">법회</th><th class="num">원기107</th><th class="num">108</th><th class="num">109</th><th class="num">110</th><th class="num" style="width:90px">4년 변화</th><th class="c" style="width:120px">여는 교당</th></tr>
+  <tr><td><strong>일반</strong></td><td class="num">53,425</td><td class="num">56,405</td><td class="num">55,887</td><td class="num">56,267</td><td class="num up">+5.3%</td><td class="c">41 → 42</td></tr>
+  <tr style="background:var(--ok-l)"><td><strong>청년</strong></td><td class="num">449</td><td class="num">971</td><td class="num">953</td><td class="num">1,119</td><td class="num up"><strong>+149%</strong></td><td class="c">7 → 9</td></tr>
+  <tr style="background:var(--ok-l)"><td><strong>어린이</strong></td><td class="num">635</td><td class="num">1,154</td><td class="num">982</td><td class="num">1,255</td><td class="num up"><strong>+98%</strong></td><td class="c">9 → 10</td></tr>
+  <tr style="background:var(--ok-l)"><td><strong>학생</strong></td><td class="num">175</td><td class="num">327</td><td class="num">537</td><td class="num">339</td><td class="num up"><strong>+94%</strong></td><td class="c">4 → 6</td></tr>
+  <tr style="background:var(--warn-l)"><td><strong>대학생</strong></td><td class="num">14</td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num dn"><strong>소멸</strong></td><td class="c">1 → 0</td></tr>
+</table>
+
+<div class="ok">
+<strong>코로나 이후만 놓고 보면 청소년·청년 법회는 뚜렷하게 성장하고 있습니다.</strong><br>
+청년법회 출석은 449명에서 1,119명으로 <strong>2.5배</strong>, 어린이법회는 635명에서 1,255명으로 <strong>거의 두 배</strong>, 학생법회는 175명에서 339명으로 <strong>두 배 가까이</strong> 되었습니다. 여는 교당도 청년 7곳 → 9곳, 어린이 9곳 → 10곳, 학생 4곳 → 6곳으로 조금씩 늘고 있습니다.<br>
+전체 출석이 멈춰 있는 가운데 <strong>이 영역만 뚜렷하게 움직이고 있다</strong>는 점은 주목할 만합니다.
+</div>
+
+<div class="ref">
+<b>※ 참고 — 이 성장은 매우 낮은 바닥에서 출발했습니다.</b> 코로나 전 청년법회 출석은 연 1,621명, 어린이법회는 3,717명, 학생법회는 1,096명이었고, 여는 교당은 <b>연평균으로 각각 13.2곳·21.4곳·12.6곳</b>이었습니다. 현재 <b>출석은 각각 69%·34%·31% 수준, 교당 수는 절반 안팎</b>입니다. 4년간의 성장률이 크게 보이는 것은 원기107년이 바닥이었기 때문입니다. 방향은 옳지만 <b>아직 예전 규모의 일부</b>라는 점을 함께 봐야 합니다.
+</div>
+
+<div class="warn">
+<strong>대학생법회는 원기109년부터 기록이 완전히 사라졌습니다.</strong><br>
+원기107년 14명(3건), 108년 6명(1건)이 마지막이며 109·110년은 <strong>교구 전체에서 0건</strong>입니다. 다만 11년을 통틀어도 57건뿐인 <strong>표본이 극히 작은 항목</strong>이고, 사실상 인천교당 한 곳의 활동이었습니다(47건, 82.5%). <strong>실제 중단인지 청년법회와 합쳐 운영하며 따로 입력하지 않는 것인지는 자료로 구분되지 않습니다.</strong> 해당 교당 확인이 필요합니다.
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당의 법회는 위 표에 포함되지 않았습니다. 번개교당은 <b>군법회가 주력</b>이며, 군법회는 본 보고서의 정례법회 5종에 들어가지 않습니다.
+<table style="margin-top:8px;background:transparent;font-size:12.5px">
+  <tr><th class="c" style="width:110px">법회</th><th class="c">107</th><th class="c">108</th><th class="c">109</th><th class="c">110</th><th class="c">4년 합계</th></tr>
+  <tr><td>군법회 (출석)</td><td class="c">1,109</td><td class="c">925</td><td class="c">1,004</td><td class="c">1,134</td><td class="c"><b>4,172</b></td></tr>
+  <tr><td>어린이 (건수)</td><td class="c">41</td><td class="c">29</td><td class="c">12</td><td class="c">2</td><td class="c"><b>84</b></td></tr>
+  <tr><td>일반 (건수)</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c"><b>0</b></td></tr>
+</table>
+번개교당의 어린이법회는 41건 → 2건으로 크게 줄었습니다. 이 교당을 함께 집계하면 <b>교구 어린이법회 4년 변화가 +98%에서 +7%로 왜곡</b>되므로, 분리한 것이 타당합니다.
+</div>
+
+<h2 id="s9">9. 교당·급지·지구별 — 31곳은 늘고 9곳은 줄었다</h2>
+
+<h3>9-1. 교당별 4년 증감</h3>
+<table>
+  <tr><th class="c" style="width:60px">구분</th><th style="width:130px">교당</th><th class="num">원기107</th><th class="num">110</th><th class="num" style="width:100px">4년 변화</th></tr>
+  <tr style="background:var(--ok-l)"><td class="c" rowspan="5">상위</td><td>동수원교당</td><td class="num">853</td><td class="num">1,673</td><td class="num up"><strong>+96.1%</strong></td></tr>
+  <tr style="background:var(--ok-l)"><td>오정교당</td><td class="num">334</td><td class="num">519</td><td class="num up">+55.4%</td></tr>
+  <tr style="background:var(--ok-l)"><td>동탄교당</td><td class="num">794</td><td class="num">1,197</td><td class="num up">+50.8%</td></tr>
+  <tr style="background:var(--ok-l)"><td>연수교당</td><td class="num">579</td><td class="num">844</td><td class="num up">+45.8%</td></tr>
+  <tr style="background:var(--ok-l)"><td>수정교당</td><td class="num">362</td><td class="num">521</td><td class="num up">+43.9%</td></tr>
+  <tr><td class="c" colspan="5" style="text-align:center;color:var(--sub)">… 중앙값 +12.8% · 40개 교당 중 <strong>증가 31곳 / 감소 9곳</strong> …</td></tr>
+  <tr style="background:var(--warn-l)"><td class="c" rowspan="5">하위</td><td>동안양교당</td><td class="num">1,929</td><td class="num">1,653</td><td class="num dn">−14.3%</td></tr>
+  <tr style="background:var(--warn-l)"><td>분당교당</td><td class="num">7,475</td><td class="num">6,307</td><td class="num dn">−15.6%</td></tr>
+  <tr style="background:var(--warn-l)"><td>경기광주교당</td><td class="num">1,020</td><td class="num">741</td><td class="num dn">−27.4%</td></tr>
+  <tr style="background:var(--warn-l)"><td>산본교당</td><td class="num">1,671</td><td class="num">1,153</td><td class="num dn">−31.0%</td></tr>
+  <tr style="background:var(--warn-l)"><td>시화교당</td><td class="num">1,230</td><td class="num">834</td><td class="num dn"><strong>−32.2%</strong></td></tr>
+</table>
+<p class="small">원기107년 출석 300명 이상인 40개 교당 대상.</p>
+
+<div class="warn">
+<strong>교구 평균의 '정체'는 31곳의 증가와 9곳의 감소가 만든 결과입니다.</strong><br>
+중앙값은 <strong>+12.8%</strong>로, <strong>대다수 교당은 실제로 늘고 있습니다.</strong> 그런데 교구 합계는 +7.8%에 그칩니다. 규모가 큰 교당이 줄었기 때문입니다.<br>
+<strong>분당교당 한 곳에서만 1,168명이 줄었는데</strong>, 이는 상위 5개 교당 증가분(1,832명)의 64%를 상쇄합니다. <strong>큰 교당의 감소가 작은 교당들의 성장을 먹고 있는 구조</strong>입니다.
+</div>
+
+<h3>9-2. 급지별·지구별</h3>
+<table>
+  <tr><th class="c" style="width:90px">급지</th><th class="num">원기107</th><th class="num">110</th><th class="num" style="width:100px">4년 변화</th><th class="c" style="width:100px">지구</th><th class="num">원기107</th><th class="num">110</th><th class="num" style="width:100px">4년 변화</th></tr>
+  <tr><td class="c">5급지</td><td class="num">3,291</td><td class="num">4,179</td><td class="num up"><strong>+27.0%</strong></td><td class="c">수원지구</td><td class="num">17,165</td><td class="num">20,405</td><td class="num up"><strong>+18.9%</strong></td></tr>
+  <tr><td class="c">3급지</td><td class="num">8,045</td><td class="num">9,597</td><td class="num up">+19.3%</td><td class="c">인천지구</td><td class="num">13,268</td><td class="num">15,222</td><td class="num up">+14.7%</td></tr>
+  <tr><td class="c">2급지</td><td class="num">12,560</td><td class="num">14,793</td><td class="num up">+17.8%</td><td class="c">분당지구</td><td class="num">14,565</td><td class="num">14,319</td><td class="num dn">−1.7%</td></tr>
+  <tr><td class="c">4급지</td><td class="num">5,088</td><td class="num">5,371</td><td class="num up">+5.6%</td><td class="c">안양지구</td><td class="num">9,700</td><td class="num">9,034</td><td class="num dn">−6.9%</td></tr>
+  <tr><td class="c">1급지</td><td class="num">7,499</td><td class="num">7,713</td><td class="num up">+2.9%</td><td class="c" colspan="4" rowspan="3" style="vertical-align:middle;color:var(--sub);font-size:12.5px">지구 간 격차는 25.8%포인트로 급지 간 격차(36.7%포인트)보다 작습니다.<br>성장은 지역보다 <strong>교당 규모</strong>와 더 관련이 있어 보입니다.</td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">특급지</td><td class="num">16,660</td><td class="num">15,923</td><td class="num dn">−4.4%</td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">6급지</td><td class="num">1,555</td><td class="num">1,404</td><td class="num dn"><strong>−9.7%</strong></td></tr>
+</table>
+
+<p><strong>가장 크고 가장 작은 교당이 함께 줄고, 중간 규모가 늘었습니다.</strong> 특급지(−4.4%)와 6급지(−9.7%)가 감소한 반면 2·3·5급지는 17~27% 늘었습니다. 다만 6급지는 4개 교당·1,404명으로 규모가 작아 <strong>한두 교당의 사정에 크게 흔들립니다.</strong></p>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당은 <b>6급지·인천지구</b>이며 위 표에서 빠졌습니다. 정례법회 5종 기준 출석은 원기107년 553명 → 110년 18명이지만, 이는 <b>부수적인 어린이법회만 센 값</b>입니다. 주력인 군법회를 포함하면 실제 활동은 <b>4년간 7,343명</b> 규모로 유지되고 있습니다.<br>
+번개교당을 포함하면 6급지 변화가 −9.7%에서 −32.5%로, 인천지구는 +14.7%에서 +10.3%로 나빠져 <b>실상과 다른 그림</b>이 됩니다.
+</div>
+
+<!-- ======= 3부 ======= -->
+<div class="part">3부 · 입교</div>
+
+<h2 id="s10">10. 4년 추세와 시기별 구조</h2>
+
+<h3>10-1. 연도별</h3>
+<table>
+  <tr><th class="c">원기</th><th class="c" style="width:80px">서기</th><th class="num">입교</th><th class="num">남</th><th class="num">여</th><th class="num" style="width:100px">전년 대비</th></tr>
+  <tr><td class="c">107</td><td class="c">2022</td><td class="num">203</td><td class="num">101</td><td class="num">102</td><td class="num">—</td></tr>
+  <tr><td class="c">108</td><td class="c">2023</td><td class="num">196</td><td class="num">106</td><td class="num">90</td><td class="num dn">−3.4%</td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">109</td><td class="c">2024</td><td class="num">306</td><td class="num">171</td><td class="num">135</td><td class="num up"><strong>+56.1%</strong></td></tr>
+  <tr style="background:var(--accent-l)"><td class="c"><strong>110</strong></td><td class="c"><strong>2025</strong></td><td class="num"><strong>288</strong></td><td class="num">122</td><td class="num">166</td><td class="num dn"><strong>−5.9%</strong></td></tr>
+</table>
+<p class="small">일반 교당 43곳 기준. 4년간 +41.9%.</p>
+
+<p><strong>출석과 다른 모양입니다.</strong> 출석은 원기108년에 뛴 뒤 멈췄는데, 입교는 <strong>108년에 오히려 줄었다가 109년에 56% 뛰고 지난해 다시 6% 줄었습니다.</strong> 두 지표의 전환점이 1년 어긋나 있고, 입교 쪽 변동이 훨씬 큽니다.</p>
+
+<div class="ref">
+<b>※ 참고</b> — 코로나 전 연평균 입교는 511명이었습니다. 현재는 그 <b>56.3%</b> 수준입니다.
+</div>
+
+<h3>10-2. 월별 <span class="small">(4년 합계, 많은 순)</span></h3>
+<table>
+  <tr><th class="c" style="width:60px">월</th><th class="num">원기107</th><th class="num">108</th><th class="num">109</th><th class="num">110</th><th class="num" style="width:90px">4년 합계</th><th></th></tr>
+  <tr style="background:var(--ok-l)"><td class="c">5월</td><td class="num">13</td><td class="num">14</td><td class="num">72</td><td class="num">28</td><td class="num"><strong>127</strong></td><td><div class="bar"><i class="g" style="width:100%"></i></div></td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">11월</td><td class="num">32</td><td class="num">16</td><td class="num">19</td><td class="num">49</td><td class="num"><strong>116</strong></td><td><div class="bar"><i class="g" style="width:91%"></i></div></td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">8월</td><td class="num">27</td><td class="num">23</td><td class="num">11</td><td class="num">51</td><td class="num"><strong>112</strong></td><td><div class="bar"><i class="g" style="width:88%"></i></div></td></tr>
+  <tr><td class="c">4월</td><td class="num">25</td><td class="num">18</td><td class="num">26</td><td class="num">30</td><td class="num">99</td><td><div class="bar"><i style="width:78%"></i></div></td></tr>
+  <tr><td class="c">6월</td><td class="num">17</td><td class="num">22</td><td class="num">34</td><td class="num">14</td><td class="num">87</td><td><div class="bar"><i style="width:69%"></i></div></td></tr>
+  <tr><td class="c">3월</td><td class="num">15</td><td class="num">16</td><td class="num">27</td><td class="num">21</td><td class="num">79</td><td><div class="bar"><i style="width:62%"></i></div></td></tr>
+  <tr><td class="c">1월</td><td class="num">25</td><td class="num">23</td><td class="num">18</td><td class="num">11</td><td class="num">77</td><td><div class="bar"><i style="width:61%"></i></div></td></tr>
+  <tr><td class="c">10월</td><td class="num">10</td><td class="num">8</td><td class="num">19</td><td class="num">32</td><td class="num">69</td><td><div class="bar"><i style="width:54%"></i></div></td></tr>
+  <tr><td class="c">2월</td><td class="num">20</td><td class="num">15</td><td class="num">18</td><td class="num">11</td><td class="num">64</td><td><div class="bar"><i style="width:50%"></i></div></td></tr>
+  <tr><td class="c">7월</td><td class="num">9</td><td class="num">11</td><td class="num">33</td><td class="num">9</td><td class="num">62</td><td><div class="bar"><i style="width:49%"></i></div></td></tr>
+  <tr><td class="c">9월</td><td class="num">4</td><td class="num">24</td><td class="num">8</td><td class="num">26</td><td class="num">62</td><td><div class="bar"><i style="width:49%"></i></div></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">12월</td><td class="num">6</td><td class="num">6</td><td class="num">21</td><td class="num">6</td><td class="num"><strong>39</strong></td><td><div class="bar"><i class="r" style="width:31%"></i></div></td></tr>
+</table>
+
+<p><strong>5월·11월·8월이 입교가 가장 많은 달이고, 12월이 압도적으로 적습니다.</strong> 12월(39명)은 5월(127명)의 <strong>3분의 1도 되지 않습니다.</strong> 다만 월별 편차가 해마다 커서(5월은 원기109년에만 72명) <strong>안정된 패턴이라기보다 특정 교당의 사건에 좌우되는 모습</strong>입니다.</p>
+
+<h3>10-3. 계절별·분기별</h3>
+<table>
+  <tr><th class="c" style="width:80px">계절</th><th class="c">107</th><th class="c">108</th><th class="c">109</th><th class="c">110</th><th class="c" style="width:180px">계절지수 추이</th></tr>
+  <tr><td class="c">봄</td><td class="c">53</td><td class="c">48</td><td class="c">125</td><td class="c">79</td><td class="c">1.04 → 0.98 → <strong>1.63</strong> → 1.10</td></tr>
+  <tr><td class="c">여름</td><td class="c">53</td><td class="c">56</td><td class="c">78</td><td class="c">74</td><td class="c">1.04 → 1.14 → 1.02 → 1.03</td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">가을</td><td class="c">46</td><td class="c">48</td><td class="c">46</td><td class="c">107</td><td class="c">0.91 → 0.98 → 0.60 → <strong>1.49</strong></td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">겨울</td><td class="c">51</td><td class="c">44</td><td class="c">57</td><td class="c">28</td><td class="c">1.00 → 0.90 → 0.75 → <strong>0.39</strong></td></tr>
+</table>
+
+<div class="warn">
+<strong>겨울 입교가 무너지고 있습니다.</strong><br>
+51 → 44 → 57 → <strong>28명</strong>으로, 지난해 절반으로 떨어졌습니다. 계절지수도 1.00에서 <strong>0.39</strong>까지 내려왔습니다. 4년 전에는 평균 수준이던 겨울이 지금은 <strong>평균의 40%도 안 되는 계절</strong>이 된 것입니다.<br><br>
+<a href="#s6">6장</a>에서 본 출석의 겨울 저점(계절지수 0.91~0.96)과 같은 방향이지만, <strong>입교 쪽이 훨씬 심각하고 악화 속도도 빠릅니다.</strong> 겨울에는 신정절이 있는데도 그렇습니다.<br>
+반대로 <strong>가을은 0.60에서 1.49로 급등</strong>했습니다. 원기110년 가을 입교 107명은 4년 중 최고입니다.
+</div>
+
+<table>
+  <tr><th class="c" style="width:80px">분기</th><th class="num">107</th><th class="num">108</th><th class="num">109</th><th class="num">110</th><th class="num" style="width:100px">4년 변화</th></tr>
+  <tr style="background:var(--ok-l)"><td class="c">3분기</td><td class="num">40</td><td class="num">58</td><td class="num">52</td><td class="num">86</td><td class="num up"><strong>+115.0%</strong></td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">4분기</td><td class="num">48</td><td class="num">30</td><td class="num">59</td><td class="num">87</td><td class="num up"><strong>+81.2%</strong></td></tr>
+  <tr><td class="c">2분기</td><td class="num">55</td><td class="num">54</td><td class="num">132</td><td class="num">72</td><td class="num up">+30.9%</td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">1분기</td><td class="num">60</td><td class="num">54</td><td class="num">63</td><td class="num">43</td><td class="num dn"><strong>−28.3%</strong></td></tr>
+</table>
+<p><strong>3분기와 4분기 입교가 4년간 두 배 안팎으로 늘었고, 1분기만 홀로 28% 줄었습니다.</strong> 하반기로 무게가 확실히 옮겨간 모습입니다.</p>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당의 입교는 위 표에서 모두 빠졌습니다. 같은 기간 <b>번개교당 입교는 231명</b>으로, 일반 교당 43곳 합계(993명)의 <b>23.3%</b>에 해당합니다. 번개교당까지 더한 교구 전체 1,224명 기준으로는 <b>18.9%</b>입니다.
+<table style="margin-top:8px;background:transparent;font-size:12.5px">
+  <tr><th class="c" style="width:110px">원기</th><th class="c">107</th><th class="c">108</th><th class="c">109</th><th class="c">110</th><th class="c">4년 합계</th></tr>
+  <tr><td>번개교당 입교</td><td class="c">66</td><td class="c">52</td><td class="c">46</td><td class="c">67</td><td class="c"><b>231</b></td></tr>
+</table>
+군법회를 통한 입교가 대부분으로, 연 46~67명 사이에서 <b>큰 추세 없이 유지</b>되고 있습니다. 이 교당을 포함하면 교구 입교 4년 변화가 <b>+41.9%에서 +32.0%로 희석</b>되므로, 분리한 것이 타당합니다.
+</div>
+
+<h2 id="s11">11. 출석과 입교의 리듬은 정반대로 간다</h2>
+
+<p>4~9장의 출석과 10장의 입교를 같은 시간축에 놓고 비교합니다.</p>
+
+<table>
+  <tr><th class="c" style="width:80px">시기</th><th class="c" style="width:140px">출석 4년 변화</th><th class="c" style="width:140px">입교 4년 변화</th><th>해석</th></tr>
+  <tr style="background:var(--blue-l)"><td class="c">1분기</td><td class="c up">+26.4%</td><td class="c dn"><strong>−28.3%</strong></td><td><strong>정반대</strong> — 사람은 늘었는데 입교는 줄었다</td></tr>
+  <tr style="background:var(--warn-l)"><td class="c">2분기</td><td class="c dn">−4.6%</td><td class="c up">+30.9%</td><td><strong>정반대</strong> — 사람은 줄었는데 입교는 늘었다</td></tr>
+  <tr style="background:var(--ok-l)"><td class="c">3분기</td><td class="c up">+13.4%</td><td class="c up"><strong>+115.0%</strong></td><td>둘 다 상승 — 입교가 <strong>8배 빠르게</strong></td></tr>
+  <tr style="background:var(--blue-l)"><td class="c">4분기</td><td class="c dn">−0.3%</td><td class="c up"><strong>+81.2%</strong></td><td><strong>정반대</strong> — 사람은 그대로인데 입교는 두 배</td></tr>
+</table>
+
+<div class="blue">
+<strong>네 분기 중 세 분기에서 두 지표가 반대로 움직입니다.</strong><br>
+이는 <strong>"법회에 사람이 많이 와야 입교가 는다"는 전제가 성립하지 않는다</strong>는 뜻입니다. 특히 1분기와 4분기가 극명합니다.
+<ul>
+  <li><strong>1분기</strong>: 출석은 26% 늘었는데(3월 +66%) 입교는 28% 줄었습니다. <strong>사람은 돌아왔지만 교도가 되지는 않았습니다.</strong></li>
+  <li><strong>4분기</strong>: 출석은 제자리인데(10월 −24%) 입교는 두 배가 되었습니다. 10월 입교는 10명에서 32명으로, 11월은 49명으로 늘었습니다.</li>
+</ul>
+가능한 해석은 두 가지입니다. ① 가을·겨울에 입교로 이어지는 별도의 통로(가족·연원·프로그램)가 작동하고 있거나 ② 연말을 앞두고 <strong>입교 처리를 몰아서 하는 행정 관행</strong>이 있을 수 있습니다. 후자라면 실제 입교 시점과 기록 시점이 다르다는 뜻이므로, <strong>어느 쪽인지 확인이 필요합니다.</strong>
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+위 대조표는 번개교당을 뺀 값입니다. 번개교당을 포함하면 1분기 입교 변화가 −28.3%에서 완화되는 등 <b>어긋남이 흐려집니다.</b> 군 교화는 부대 일정에 따라 입교가 발생하므로 일반 교당의 계절 리듬과 섞으면 해석이 불가능해집니다.
+</div>
+
+<!-- ======= 4부 ======= -->
+<div class="part">4부 · 6대 특별행사</div>
+
+<h2 id="s12">12. 행사는 사람을 모으는가</h2>
+
+<h3>12-1. 개최 현황과 규모</h3>
+<p class="small">※ 12장의 행사 수치는 <strong>비대면 포함</strong>입니다. 4축2재는 화상·영상 기록이 섞여 있고, 특히 <strong>명절대재 12건은 전부 비대면 기록</strong>이라 대면만 세면 0건이 되기 때문입니다. 4~9장의 대면 기준과 다릅니다.</p>
+<table>
+  <tr><th style="width:110px">행사</th><th class="c" style="width:90px">보통 시기</th><th class="num" style="width:80px">4년 건수</th><th class="c" style="width:110px">여는 교당<br><span class="small">107 → 110</span></th><th class="num" style="width:90px">4년 출석</th><th class="num" style="width:90px">1회당</th></tr>
+  <tr><td>대각개교절</td><td class="c">4월 28일</td><td class="num">151</td><td class="c">36 → 34</td><td class="num">5,456</td><td class="num">36.1</td></tr>
+  <tr><td>석존성탄절</td><td class="c">음 4월 8일</td><td class="num">145</td><td class="c">32 → 33</td><td class="num">5,550</td><td class="num"><strong>38.3</strong></td></tr>
+  <tr><td>육일대재</td><td class="c">6월 1일</td><td class="num">143</td><td class="c">32 → 28</td><td class="num">5,362</td><td class="num">37.5</td></tr>
+  <tr><td>신정절</td><td class="c">1월 1일</td><td class="num">138</td><td class="c">33 → 30</td><td class="num">5,010</td><td class="num">36.3</td></tr>
+  <tr style="background:var(--warn-l)"><td>법인절</td><td class="c">8월 21일</td><td class="num">123</td><td class="c">28 → 25</td><td class="num">4,037</td><td class="num">32.8</td></tr>
+  <tr style="background:var(--warn-l)"><td>명절대재</td><td class="c">음 12월 1일</td><td class="num" style="color:var(--warn)"><strong>12</strong></td><td class="c" style="color:var(--warn)"><strong>3 → 3</strong></td><td class="num">315</td><td class="num">26.2</td></tr>
+</table>
+
+<h3>12-2. 동원 배수 — 평소 법회의 몇 배가 오는가</h3>
+<table>
+  <tr><th style="width:110px">행사</th><th class="c">원기107</th><th class="c">108</th><th class="c">109</th><th class="c">110</th><th class="c" style="width:90px">4년 중앙값</th><th class="c" style="width:100px">추세</th></tr>
+  <tr><td>석존성탄절</td><td class="c">1.38</td><td class="c">1.17</td><td class="c">1.18</td><td class="c">1.20</td><td class="c"><strong>1.23</strong></td><td class="c">유지</td></tr>
+  <tr style="background:var(--ok-l)"><td>육일대재</td><td class="c">1.14</td><td class="c">1.09</td><td class="c">1.18</td><td class="c">1.26</td><td class="c"><strong>1.18</strong></td><td class="c up">강화</td></tr>
+  <tr style="background:var(--ok-l)"><td>대각개교절</td><td class="c">1.09</td><td class="c">1.05</td><td class="c">1.39</td><td class="c">1.22</td><td class="c"><strong>1.16</strong></td><td class="c up">강화</td></tr>
+  <tr><td>신정절</td><td class="c">1.06</td><td class="c">1.15</td><td class="c">1.11</td><td class="c">1.04</td><td class="c">1.11</td><td class="c">유지</td></tr>
+  <tr style="background:var(--warn-l)"><td>법인절</td><td class="c">1.14</td><td class="c">1.05</td><td class="c">0.94</td><td class="c">0.91</td><td class="c">1.05</td><td class="c dn">약화</td></tr>
+  <tr style="background:var(--warn-l)"><td>명절대재</td><td class="c">0.41</td><td class="c">0.44</td><td class="c">0.24</td><td class="c">0.21</td><td class="c" style="color:var(--warn)"><strong>0.33</strong></td><td class="c dn">약화</td></tr>
+</table>
+<p class="small"><strong>동원 배수</strong> = 행사 당일 출석 ÷ 같은 교당·같은 해 일반법회 평균 출석. 1.20이면 평소의 1.2배가 왔다는 뜻입니다. 교당 규모 차이를 없앤 값이며, 12-1과 마찬가지로 <strong>비대면 포함</strong> 기준입니다. 전체 중앙값 1.15.</p>
+
+<div class="note">
+<strong>행사의 힘은 생각보다 크지 않습니다 — 평소의 1.1~1.2배 수준입니다.</strong><br>
+가장 강한 석존성탄절도 1.23배입니다. "큰 행사니까 평소의 두세 배가 온다"는 통념과는 거리가 있습니다.<br><br>
+4년 추세로 보면 세 갈래로 갈립니다.
+<ul style="margin-bottom:0">
+  <li><strong>강화</strong> — 육일대재(1.14→1.26), 대각개교절(1.09→1.22)</li>
+  <li><strong>유지</strong> — 석존성탄절, 신정절</li>
+  <li><strong>약화</strong> — <strong>법인절(1.14→0.91)</strong>과 명절대재(0.41→0.21)</li>
+</ul>
+</div>
+
+<div class="warn">
+<strong>법인절이 뚜렷하게 약해지고 있습니다.</strong><br>
+동원 배수가 <strong>원기109년부터 1.0 아래로 떨어졌습니다.</strong> 이는 <em>법인절 법회에 평소 일반법회보다 사람이 적게 온다</em>는 뜻입니다. 여는 교당도 28곳에서 25곳으로 줄었습니다. 6개 행사 중 유일하게 <strong>모든 지표가 함께 내려가고 있습니다.</strong>
+</div>
+
+<div class="warn">
+<strong>명절대재는 수치를 그대로 읽으면 안 됩니다 <span class="tag r">부연</span></strong><br>
+코로나 이후 4년간 <strong>12건뿐</strong>이며, 기록한 교당은 <strong>해마다 3곳, 4년 누적 4곳</strong>(광명·분당·산본·수원)입니다.
+<ol style="margin-bottom:0">
+  <li><strong>이 수치는 행사 규모가 아니라 입력 성실도를 재고 있습니다.</strong> 43개 교당 중 해마다 3곳만 기록했다는 것은, 나머지 40곳이 안 지냈다기보다 원티스에 넣지 않았을 가능성이 큽니다</li>
+  <li><strong>동원 배수 0.33</strong>은 기록한 교당에서도 평소 법회의 3분의 1만 온다는 뜻입니다</li>
+  <li><strong>음력 기준</strong>이라 양력 월이 해마다 이동합니다(11월·12월로 갈림). "12월 행사"로 고정하면 안 됩니다</li>
+  <li>표본이 12건이므로 <strong>비율보다 실제 건수로 읽어야 합니다</strong></li>
+</ol>
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당은 위 표에서 빠졌습니다. 같은 기간 번개교당의 <b>4축2재는 4건</b>(원기108년 2건 · 110년 2건)에 그쳐, 6대 행사를 정기적으로 봉행하지 않습니다. 군 교화의 특성상 부대 일정에 맞춘 법회가 중심이기 때문으로 보입니다.
+</div>
+
+<h2 id="s13">13. 행사는 교도를 만드는가 <span class="tag r">신규 분석</span></h2>
+
+<p>12장은 <strong>사람이 얼마나 오는가</strong>를 봤습니다. 이 장은 <strong>그 사람들이 교도가 되는가</strong>를 봅니다.</p>
+
+<div class="card">
+<strong>측정 방법</strong>
+<ol style="margin-bottom:0">
+  <li><strong>관측</strong> — 행사가 열린 교당에서, <strong>행사일 앞뒤 7일(총 15일)</strong> 안에 입교한 사람 수를 셉니다</li>
+  <li><strong>기대</strong> — 그 교당의 그해 입교자 수 × (15일 ÷ 365일). <em>입교가 1년 내내 고르게 일어난다면 이 기간에 몇 명이 들어왔을지</em><br><span class="small">아래 강건성 검사에서 제외한 단체 입교 35명은 <strong>관측값과 기대값 양쪽에서 모두</strong> 뺐습니다</span></li>
+  <li><strong>입교 배수</strong> = 관측 ÷ 기대. <strong>1.0이면 평상시와 같음(행사 효과 없음)</strong>, 1.5면 평소의 1.5배, 0.7이면 <strong>오히려 평소보다 적음</strong></li>
+</ol>
+</div>
+
+<table>
+  <tr><th style="width:110px">행사</th><th class="num" style="width:95px">±7일 입교</th><th class="num" style="width:85px">기대치</th><th class="num" style="width:85px">입교 배수</th><th class="c" style="width:90px">발생 교당</th><th class="c" style="width:100px">발생 건수<br><span class="small">교당×날짜</span></th></tr>
+  <tr style="background:var(--ok-l)"><td><strong>석존성탄절</strong></td><td class="num">57</td><td class="num">32.3</td><td class="num"><strong>1.76</strong></td><td class="c"><strong>17곳</strong></td><td class="c">23건</td></tr>
+  <tr style="background:var(--ok-l)"><td><strong>대각개교절</strong></td><td class="num">60</td><td class="num">35.0</td><td class="num"><strong>1.72</strong></td><td class="c"><strong>19곳</strong></td><td class="c">25건</td></tr>
+  <tr><td>명절대재</td><td class="num">6</td><td class="num">5.3</td><td class="num" style="color:var(--warn)">(1.14)</td><td class="c" style="color:var(--warn)">3곳</td><td class="c" style="color:var(--warn)">5건</td></tr>
+  <tr><td>육일대재</td><td class="num">31</td><td class="num">32.5</td><td class="num">0.95</td><td class="c">17곳</td><td class="c">21건</td></tr>
+  <tr style="background:var(--warn-l)"><td><strong>법인절</strong></td><td class="num">22</td><td class="num">27.0</td><td class="num" style="color:var(--warn)"><strong>0.81</strong></td><td class="c">11곳</td><td class="c">14건</td></tr>
+  <tr style="background:var(--warn-l)"><td><strong>신정절</strong></td><td class="num">20</td><td class="num">28.0</td><td class="num" style="color:var(--warn)"><strong>0.71</strong></td><td class="c">11곳</td><td class="c">13건</td></tr>
+</table>
+<p class="small">단체 입교 1건(아래 설명)을 제외한 값입니다. <strong>명절대재는 관측 6건으로 기준(10건)에 못 미쳐 배수를 괄호로 표기했습니다 — 지표로 사용하지 마십시오.</strong></p>
+
+<div class="ok">
+<strong>6개 행사 중 입교로 이어지는 것은 대각개교절과 석존성탄절 둘뿐입니다.</strong><br>
+두 행사는 전후 15일 동안 평소의 <strong>1.7~1.8배</strong> 입교가 일어납니다. 발생 교당도 각각 19곳·17곳으로 <strong>여러 교당에서 고르게 나타나는 현상</strong>입니다.<br><br>
+나머지 넷은 1.0 안팎이거나 그 아래입니다. 특히 <strong>신정절은 0.71배로, 행사 전후에 오히려 평소보다 입교가 적습니다.</strong>
+</div>
+
+<div class="blue">
+<strong>동원력과 전환력의 순위가 다릅니다 — 이것이 이 보고서의 핵심 발견입니다.</strong>
+<table style="margin-top:10px;background:transparent">
+  <tr><th style="width:110px">행사</th><th class="c" style="width:120px">동원력<br><span class="small">사람을 모으는가</span></th><th class="c" style="width:120px">전환력<br><span class="small">교도를 만드는가</span></th><th>평가</th></tr>
+  <tr style="background:var(--ok-l)"><td>석존성탄절</td><td class="c"><strong>1.23</strong> <span class="small">(1위)</span></td><td class="c"><strong>1.76</strong> <span class="small">(1위)</span></td><td><strong>둘 다 좋음</strong> — 교화 행사</td></tr>
+  <tr style="background:var(--ok-l)"><td>대각개교절</td><td class="c">1.16 <span class="small">(3위)</span></td><td class="c"><strong>1.72</strong> <span class="small">(2위)</span></td><td><strong>둘 다 좋음</strong> — 교화 행사</td></tr>
+  <tr><td>육일대재</td><td class="c">1.18 <span class="small">(2위)</span></td><td class="c">0.95 <span class="small">(4위)</span></td><td>모이지만 <strong>이어지지 않음</strong></td></tr>
+  <tr style="background:var(--warn-l)"><td>신정절</td><td class="c">1.11 <span class="small">(4위)</span></td><td class="c" style="color:var(--warn)"><strong>0.71</strong> <span class="small">(6위)</span></td><td><strong>동원 행사에 그침</strong></td></tr>
+  <tr style="background:var(--warn-l)"><td>법인절</td><td class="c">1.05 <span class="small">(5위)</span></td><td class="c">0.81 <span class="small">(5위)</span></td><td><strong>둘 다 약화 중</strong></td></tr>
+</table>
+<p style="margin:10px 0 0"><strong>육일대재와 신정절은 사람은 모으는데 교도로 이어지지 않습니다.</strong> 특히 신정절은 동원력이 4위인데 전환력은 꼴찌입니다. 새해 인사를 위해 모이지만 <em>새로 들어오는 자리</em>는 아니라는 뜻입니다. <a href="#s10">10장</a>에서 본 <strong>겨울 입교의 붕괴(계절지수 1.00 → 0.39)</strong>와 정확히 맞물립니다.</p>
+</div>
+
+<div class="warn">
+<strong>강건성 검사 — 단체 입교 1건이 결과를 뒤집었습니다</strong><br>
+처음 계산했을 때 <strong>법인절이 2.00배로 1위</strong>였습니다. 그런데 확인해 보니 <strong>산본교당에서 2025년 8월 25일 하루에 35명이 한꺼번에 입교한 단 한 건</strong>이 만든 값이었습니다. 법인절 전체 관측 57건 중 35건이 이 하루에서 나왔고, 상위 3개 (교당×날짜)가 전체의 <strong>75%</strong>를 차지했습니다.<br>
+이 한 건을 빼자 배수가 <strong>2.00 → 0.81로 뒤집혔습니다.</strong> 위 표는 제외한 값입니다.<br><br>
+같은 검사를 6개 행사 모두에 적용한 결과입니다. 집중도는 <strong>단체 입교 제외 후</strong> 값입니다.
+<table style="margin-top:10px;background:transparent">
+  <tr><th style="width:110px">행사</th><th class="c" style="width:120px">상위 3건 집중도</th><th class="c" style="width:90px">발생 교당</th><th class="c" style="width:90px">관측 건수</th><th>판정</th></tr>
+  <tr><td>대각개교절</td><td class="c">28%</td><td class="c">19곳</td><td class="c">60</td><td class="c" style="color:var(--ok)"><strong>견고</strong></td></tr>
+  <tr><td>육일대재</td><td class="c">29%</td><td class="c">17곳</td><td class="c">31</td><td class="c" style="color:var(--ok)"><strong>견고</strong></td></tr>
+  <tr><td>석존성탄절</td><td class="c">35%</td><td class="c">17곳</td><td class="c">57</td><td class="c" style="color:var(--ok)"><strong>견고</strong></td></tr>
+  <tr><td>신정절</td><td class="c">40%</td><td class="c">11곳</td><td class="c">20</td><td class="c">보통</td></tr>
+  <tr style="background:var(--warn-l)"><td>법인절</td><td class="c">45%<br><span class="small">제외 전 75%</span></td><td class="c">11곳</td><td class="c">22<span class="small">(제외 전 57)</span></td><td class="c" style="color:var(--warn)"><strong>단체 입교 제외함</strong></td></tr>
+  <tr style="background:var(--warn-l)"><td>명절대재</td><td class="c" style="color:var(--warn)"><strong>67%</strong></td><td class="c" style="color:var(--warn)">3곳</td><td class="c" style="color:var(--warn)">6</td><td class="c" style="color:var(--warn)"><strong>표본 부족 — 참고치</strong></td></tr>
+</table>
+</div>
+
+<div class="bg">
+<span class="t">번개교당 제외 — 이 장의 해당 수치</span>
+번개교당의 입교 231명과 4축2재 4건은 위 계산에서 모두 빠졌습니다. 번개교당은 <b>군법회를 통한 입교</b>가 대부분이라 특별행사와 무관하게 발생하므로, 포함하면 <b>기대치만 키워 모든 행사의 배수를 낮추는</b> 왜곡이 생깁니다.
+</div>
+
+<!-- ======= 5부 ======= -->
+<div class="part">5부 · 종합</div>
+
+<h2 id="s14">14. 종합 진단 — 정체의 정체</h2>
+
+<p>이 보고서의 출발 질문은 <strong>"코로나 이후 교화는 지금 어떤 상태인가"</strong>였습니다. 답은 이렇습니다.</p>
+
+<div class="note">
+<p style="margin-top:0"><strong>겉으로 보이는 것: 3년째 정체</strong><br>
+출석은 원기108년 이후 5만8천~5만9천 명에서 움직이지 않습니다. 법회 횟수도 2,417 → 2,407 → 2,444로 고정입니다.</p>
+
+<p><strong>실제로 벌어지는 것: 서로 반대 방향의 움직임이 상쇄되고 있다</strong></p>
+<table style="margin-top:10px;background:transparent">
+  <tr><th style="width:190px">늘고 있는 것</th><th style="width:190px">줄고 있는 것</th><th>출처</th></tr>
+  <tr><td class="up">3월 +66% · 9월 +43%</td><td class="dn">10월 −24% · 5월 −20%</td><td><a href="#s5">5장</a></td></tr>
+  <tr><td class="up">1분기 +26.4% · 3분기 +13.4%</td><td class="dn">2분기 −4.6% · 4분기 −0.3%</td><td><a href="#s6">6장</a></td></tr>
+  <tr><td class="up">청년 +149% · 어린이 +98% · 학생 +94%</td><td class="dn">대학생법회 소멸</td><td><a href="#s8">8장</a></td></tr>
+  <tr><td class="up">31개 교당 증가(중앙값 +12.8%)</td><td class="dn">9개 교당 감소(분당 −1,168명)</td><td><a href="#s9">9장</a></td></tr>
+  <tr><td class="up">2·3·5급지 +17~27%</td><td class="dn">특급지 −4.4% · 6급지 −9.7%</td><td><a href="#s9">9장</a></td></tr>
+  <tr><td class="up">가을 입교 지수 0.60 → 1.49</td><td class="dn">겨울 입교 지수 1.00 → 0.39</td><td><a href="#s10">10장</a></td></tr>
+</table>
+
+<p style="margin-bottom:0"><strong>즉 '정체'는 아무 일도 없는 상태가 아니라, 성장하는 부분과 무너지는 부분이 균형을 이룬 상태입니다.</strong> 이 균형은 언제든 한쪽으로 기울 수 있습니다. 특히 <strong>큰 교당이 계속 줄면 작은 교당의 성장으로는 메워지지 않습니다.</strong></p>
+</div>
+
+<h3>세 가지 구조적 신호</h3>
+
+<div class="warn">
+<strong>1. 겨울이 무너지고 있습니다</strong><br>
+출석 계절지수가 4년 내내 1.0을 넘지 못했고(0.91~0.96), <strong>입교는 계절지수가 1.00에서 0.39로 급락</strong>했습니다. 겨울에는 신정절이 있는데도 <strong>그 행사의 입교 전환력이 0.71배로 최하위</strong>입니다(<a href="#s13">13장</a>). 세 지표가 같은 곳을 가리킵니다.
+</div>
+
+<div class="warn">
+<strong>2. 모이는 것과 들어오는 것이 따로 놉니다</strong><br>
+네 분기 중 <strong>세 분기에서 출석과 입교가 반대로 움직입니다</strong>(<a href="#s11">11장</a>). 1분기는 출석 +26.4%인데 입교 −28.3%이고, 4분기는 출석 −0.3%인데 입교 +81.2%입니다. 행사에서도 육일대재와 신정절은 사람은 모으는데 입교로는 이어지지 않습니다(<a href="#s13">13장</a>). <strong>"출석을 늘리면 입교도 는다"는 전제가 대부분의 구간에서 성립하지 않습니다.</strong>
+</div>
+
+<div class="ok">
+<strong>3. 청소년·청년 영역은 되살아나고 있습니다</strong><br>
+청년법회 +149%, 어린이법회 +98%, 학생법회 +94%이고 여는 교당도 조금씩 늘고 있습니다. 다만 <strong>바닥이 매우 낮았기 때문에 비율이 크게 보이는 것</strong>이고, 절대 규모는 아직 코로나 전의 3분의 1~3분의 2 수준입니다. <strong>방향은 옳지만 아직 초기</strong>입니다.
+</div>
+
+<h2 id="s15">15. 실행 과제</h2>
+
+<table>
+  <tr><th class="c" style="width:44px">순위</th><th style="width:190px">과제</th><th style="width:110px">근거</th><th>내용</th></tr>
+  <tr>
+    <td class="c"><span class="tag r">1</span></td>
+    <td><strong>겨울(12~2월) 대책</strong></td>
+    <td>6장·10장·13장</td>
+    <td>출석·입교·행사 전환력 <strong>세 지표가 모두 겨울에서 최저</strong>입니다. 특히 <strong>겨울 입교 계절지수가 4년 만에 1.00에서 0.39로 떨어졌고 12월 입교는 4년 합계 39명</strong>에 불과합니다. 신정절이 동원은 하지만 입교로 이어지지 않으므로, <strong>신정절을 입교 계기로 설계하는 것</strong>이 가장 직접적인 방안입니다</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag r">2</span></td>
+    <td><strong>대각개교절·석존성탄절<br>모델을 다른 행사로</strong></td>
+    <td>13장</td>
+    <td>이 두 행사만 입교로 이어집니다(1.72·1.76배). <strong>이 두 행사에서 무엇을 다르게 하는지</strong>(입교식 병행, 사전 안내, 연원 초청 등)를 확인해 육일대재·신정절에 적용할 수 있습니다. 19곳·17곳에서 고르게 나타나는 현상이라 <strong>일반화 가능성이 높습니다</strong></td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag">3</span></td>
+    <td><strong>감소 9개 교당 진단</strong></td>
+    <td>9장</td>
+    <td>31곳이 늘고 있는데 교구 합계가 정체인 것은 <strong>큰 교당의 감소</strong> 때문입니다. 분당교당 한 곳에서만 1,168명이 줄어 상위 5곳 증가분의 64%를 상쇄했습니다. <strong>규모가 큰 교당부터 원인 확인</strong>이 필요합니다</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag">4</span></td>
+    <td><strong>10월·5월 하락 원인 확인</strong></td>
+    <td>5장</td>
+    <td>원기107년 연중 최고권이던 두 달이 4년 만에 최하위권이 되었습니다. 10월은 4,061명으로 <strong>연중 최저</strong>입니다. 야외 행사·교구 일정과의 충돌 여부를 확인할 필요가 있습니다</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag">5</span></td>
+    <td><strong>청소년 법회 성장 지원</strong></td>
+    <td>8장</td>
+    <td>4년간 유일하게 뚜렷이 성장하는 영역입니다. 다만 여는 교당이 9곳·10곳·6곳으로 아직 적어, <strong>지금 하는 교당을 지원하는 동시에 신규 개설을 늘리는</strong> 두 갈래가 필요합니다</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag">6</span></td>
+    <td><strong>법인절 재검토</strong></td>
+    <td>12장·13장</td>
+    <td>6개 행사 중 <strong>유일하게 동원력·출석·개최 교당이 모두 감소</strong>하고 있습니다(배수 1.14→0.91). 8월 휴가철이라는 시기 요인이 큰지, 행사 자체의 문제인지 구분이 필요합니다</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag gr">7</span></td>
+    <td><strong>하반기 입교 급증의<br>실체 확인</strong></td>
+    <td>11장</td>
+    <td>3·4분기 입교가 두 배 안팎으로 늘었는데 출석은 따라 늘지 않았습니다. <strong>실제 유입인지 연말 행정 처리 관행인지</strong>에 따라 해석이 완전히 달라집니다. 교당 몇 곳에 확인하면 바로 판별됩니다</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag gr">8</span></td>
+    <td><strong>명절대재 입력 정비</strong></td>
+    <td>12장</td>
+    <td>43개 교당 중 해마다 3곳만 기록합니다. 지금 자료로는 <strong>안 지낸 것인지 입력을 안 한 것인지 구분되지 않아</strong> 분석 자체가 불가능합니다</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="tag gr">9</span></td>
+    <td><strong>번개교당 별도 관리 지표</strong></td>
+    <td>부록 17-1</td>
+    <td>군 교화는 일반 교당의 잣대로 잴 수 없습니다. <strong>군법회 개최율·1회당 출석·전역 후 연계</strong> 같은 <strong>전용 지표</strong>를 따로 만들어 관리하는 것이 맞습니다</td>
+  </tr>
+</table>
+
+<h2 id="s16">16. 이 보고서의 한계</h2>
+
+<h3>16-1. 자료의 한계</h3>
+<table>
+  <tr><th class="c" style="width:44px">#</th><th style="width:170px">한계</th><th>내용</th></tr>
+  <tr><td class="c">1</td><td><strong>4년은 짧습니다</strong></td><td>추세를 판단하기에 4개 관측점은 적습니다. 특히 입교는 <strong>원기109년 한 해의 급증(+56.1%)</strong>이 4년 변화의 대부분을 만들었고 지난해는 오히려 줄었습니다. <strong>원기111년 자료가 나와야 추세인지 확정할 수 있습니다</strong></td></tr>
+  <tr><td class="c">2</td><td><strong>법회 미입력과<br>미개최를 구분할 수<br>없습니다</strong></td><td>기록이 없을 때 실제로 안 열었는지 원티스에 넣지 않았는지 알 수 없습니다. 명절대재(3곳만 기록)가 대표 사례입니다. <strong>개최 교당 수를 항상 병기</strong>해 독자가 판단할 수 있게 했습니다</td></tr>
+  <tr><td class="c">3</td><td><strong>입교 날짜가 실제<br>시점인지 불확실합니다</strong></td><td>11장의 하반기 입교 급증이 <strong>실제 유입인지 연말 일괄 처리인지</strong> 자료로는 구분되지 않습니다. 이는 <strong>13장의 행사 전후 입교 분석에도 영향</strong>을 줍니다 — 행사일 근처에 입교가 몰린 것이 실제 그날의 결단인지 행사에 맞춰 서류를 처리한 것인지 알 수 없기 때문입니다</td></tr>
+  <tr><td class="c">4</td><td><strong>표본이 작은 항목이<br>있습니다</strong></td><td>명절대재 12건·4개 교당, 대학생법회 4년간 20명, 6급지 4개 교당 등입니다. <strong>비율이 아니라 실제 건수로 읽어야 하며</strong>, 해당 표에 원 건수를 함께 실었습니다</td></tr>
+  <tr><td class="c">5</td><td><strong>비대면이 본문에서<br>빠져 있습니다</strong></td><td>4~6장·8~9장의 수치는 대면만 센 값입니다. 원기110년에도 <strong>6,042명이 비대면으로 참여</strong>했으므로(7장), 본문 수치는 실제 참여의 일부입니다. 비대면을 포함하면 <strong>"3년째 정체"가 "4년간 총량 유지"로</strong> 조금 달라집니다</td></tr>
+  <tr><td class="c">6</td><td><strong>번개교당을 뺀 만큼<br>교구 전체는 아닙니다</strong></td><td>본 보고서는 <strong>일반 교당 43곳</strong>의 그림입니다. 번개교당의 군법회 출석 4,172명과 입교 231명은 <strong>교구 실적에 실재하지만 여기에 없습니다.</strong> 교구 전체 총량을 말할 때는 부록 17-1의 수치를 더해야 합니다</td></tr>
+</table>
+
+<h3>16-2. 분석 방법의 한계</h3>
+<table>
+  <tr><th class="c" style="width:44px">#</th><th style="width:170px">한계</th><th>내용</th></tr>
+  <tr><td class="c">7</td><td><strong>인과관계가 아니라<br>상관관계입니다</strong></td><td>13장의 "대각개교절 전후 입교 1.72배"는 <strong>행사가 입교를 만들었다는 증명이 아닙니다.</strong> 원래 입교를 준비하던 사람이 큰 행사에 맞춰 입교했을 수 있습니다(시점 선택 효과). 그래도 <strong>이 두 행사가 입교의 계기로 활용되고 있다는 사실</strong> 자체는 정책적으로 의미가 있습니다</td></tr>
+  <tr><td class="c">8</td><td><strong>단체 입교에 민감합니다</strong></td><td>13장에서 확인했듯 <strong>한 건이 순위를 뒤집습니다.</strong> 법인절은 2.00에서 0.81로 바뀌었습니다. 다른 행사도 같은 검사를 거쳤지만, <strong>표본이 6~60건으로 크지 않아</strong> 새로운 단체 입교가 생기면 결과가 달라질 수 있습니다</td></tr>
+  <tr><td class="c">9</td><td><strong>±7일 창은 임의 선택입니다</strong></td><td>행사 효과의 지속 기간을 7일로 잡은 근거는 없습니다. 창을 넓히면 <strong>다른 요인이 섞이고</strong> 좁히면 표본이 부족해집니다. 순위 자체는 창을 바꿔도 유지되지만 <strong>배수의 절대값은 창에 따라 달라집니다</strong></td></tr>
+  <tr><td class="c">10</td><td><strong>기준점 변경의 효과</strong></td><td>이 보고서는 원기107년을 기준으로 삼습니다. 그런데 <strong>원기107년은 회복 도중의 해</strong>라 정상 상태가 아니었습니다. 그래서 <strong>"107년 대비 성장"이 실제로는 "정상화 과정"의 일부일 수 있습니다.</strong> 특히 8장의 청년법회 +149%는 원기107년이 유난히 낮았던 영향이 큽니다</td></tr>
+  <tr><td class="c">11</td><td><strong>왜 그런지는<br>답하지 못합니다</strong></td><td>이 분석은 <strong>무엇이 일어났는지</strong>만 보여줍니다. 3월이 왜 66% 늘었는지, 분당교당이 왜 줄었는지는 <strong>자료 밖의 정보</strong>이며 해당 교당 확인이 필요합니다</td></tr>
+  <tr><td class="c">12</td><td><strong>교단 공식 집계와의<br>대조가 남았습니다</strong></td><td>원티스 발행 연도별 집계 PDF와의 최종 대조를 완료하지 않았습니다. 서로 다른 두 자료 간 교차 확인에서는 연도별 차이가 2~9% 범위로 방향이 일치했습니다. <strong>확정 전 단계</strong>로 보시는 것이 정확합니다</td></tr>
+</table>
+
+<div class="warn">
+<strong>이 보고서를 인용할 때 조심할 것</strong>
+<ul style="margin-bottom:0">
+  <li><strong>"청년법회 +149%"만 떼어 쓰지 마십시오.</strong> 원기107년이 바닥이었기 때문이며, 절대 규모는 코로나 전의 69% 수준입니다(8장 각주)</li>
+  <li><strong>명절대재 수치는 인용하지 마십시오.</strong> 3~4개 교당·12건으로, 행사가 아니라 입력 관행을 재고 있습니다</li>
+  <li><strong>"3년째 정체"를 부정적으로만 읽지 마십시오.</strong> 31개 교당은 늘고 있고, 비대면을 포함하면 총 참여는 유지되고 있습니다</li>
+  <li><strong>행사 입교 배수를 성과 평가로 쓰지 마십시오.</strong> 단체 입교 한 건에 뒤집히는 지표이며, 시점 선택 효과가 섞여 있습니다</li>
+  <li><strong>이 수치를 교구 전체 실적으로 쓰지 마십시오.</strong> 번개교당이 빠져 있습니다(한계 6번)</li>
+</ul>
+</div>
+
+<h2 id="s17">17. 부록</h2>
+
+<h3>17-1. 번개교당 — 제외한 교당의 수치</h3>
+<p>번개교당은 <strong>군법회 중심의 특수 교당</strong>이라 본문 집계에서 모두 제외했습니다. 그 자체 수치는 아래와 같습니다.</p>
+<table>
+  <tr><th style="width:170px">항목</th><th class="c">원기107</th><th class="c">108</th><th class="c">109</th><th class="c">110</th><th class="c" style="width:100px">4년 합계</th></tr>
+  <tr><td><strong>군법회 건수</strong></td><td class="c">77</td><td class="c">90</td><td class="c">79</td><td class="c">85</td><td class="c"><strong>331</strong></td></tr>
+  <tr><td><strong>군법회 출석</strong></td><td class="c">1,109</td><td class="c">925</td><td class="c">1,004</td><td class="c">1,134</td><td class="c"><strong>4,172</strong></td></tr>
+  <tr><td>어린이법회 건수</td><td class="c">41</td><td class="c">29</td><td class="c">12</td><td class="c">2</td><td class="c">84</td></tr>
+  <tr><td>어린이법회 출석</td><td class="c">553</td><td class="c">268</td><td class="c">88</td><td class="c">18</td><td class="c">927</td></tr>
+  <tr><td>일반법회</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td></tr>
+  <tr><td>4축2재 건수</td><td class="c">0</td><td class="c">2</td><td class="c">0</td><td class="c">2</td><td class="c">4</td></tr>
+  <tr><td>수시법회 건수</td><td class="c" colspan="4" style="text-align:center;color:var(--sub)">—</td><td class="c">34</td></tr>
+  <tr style="background:var(--accent-l)"><td><strong>입교</strong></td><td class="c"><strong>66</strong></td><td class="c"><strong>52</strong></td><td class="c"><strong>46</strong></td><td class="c"><strong>67</strong></td><td class="c"><strong>231</strong></td></tr>
+  <tr style="background:var(--accent-l)"><td><strong>전체 법회 출석</strong></td><td class="c" colspan="4" style="text-align:center;color:var(--sub)">모든 법회구분 합계</td><td class="c"><strong>7,343</strong></td></tr>
+</table>
+
+<div class="note">
+<strong>왜 분리했는가</strong>
+<ul style="margin-bottom:0">
+  <li><strong>법회 구성이 완전히 다릅니다.</strong> 코로나 이후 정례법회 415건 중 331건(80%)이 군법회이고 <strong>일반법회는 0건</strong>입니다. 일반 교당은 정례법회 출석의 96%가 일반법회입니다(건수로는 78%)</li>
+  <li><strong>1회당 출석이 절반입니다.</strong> 군법회 12.6명 vs 일반 교당 정례법회 24.1명. 병력 순환·전역이 잦은 군 교화의 특성입니다</li>
+  <li><strong>입교 규모가 큽니다.</strong> 4년간 231명으로 일반 교당 43곳 합계(993명)의 23.3%, 교구 전체(1,224명)의 18.9%입니다. 포함하면 <strong>교구 입교 증가율이 +41.9%에서 +32.0%로 희석</strong>됩니다</li>
+  <li><strong>포함하면 왜곡됩니다.</strong> 어린이법회가 41건→2건으로 줄어, 함께 세면 <strong>교구 어린이법회 4년 변화가 +98%에서 +7%로</strong> 잘못 보입니다. 급지·지구도 6급지 −9.7%가 −32.5%로, 인천지구 +14.7%가 +10.3%로 나빠집니다</li>
+</ul>
+</div>
+
+<h3>17-2. 코로나 전 참고표</h3>
+<p class="small">본문에서 각주로만 언급한 코로나 전·코로나기 수치입니다. 현재 수준을 가늠하는 참고용이며, 본문의 판단 근거로는 쓰지 않았습니다. <strong>모두 번개교당 제외 기준</strong>입니다.</p>
+<table>
+  <tr><th style="width:170px">지표</th><th class="num" style="width:130px">코로나 전<br><span class="small">원기100~104 연평균</span></th><th class="num" style="width:130px">코로나기<br><span class="small">원기105~106 연평균</span></th><th class="num" style="width:110px">현재<br><span class="small">원기110</span></th><th class="num" style="width:110px">코로나 전 대비</th></tr>
+  <tr><td>법회 출석(연인원)</td><td class="num">77,491</td><td class="num">39,968</td><td class="num">58,980</td><td class="num">76.1%</td></tr>
+  <tr><td>법회 횟수</td><td class="num">3,102</td><td class="num">1,504</td><td class="num">2,444</td><td class="num">78.8%</td></tr>
+  <tr><td>1회당 인원</td><td class="num">25.0</td><td class="num">26.6</td><td class="num">24.1</td><td class="num">96.6%</td></tr>
+  <tr><td>신도 비율</td><td class="num">4.9%</td><td class="num">1.8%</td><td class="num">2.6%</td><td class="num">53%</td></tr>
+  <tr><td>입교자</td><td class="num">511</td><td class="num">146</td><td class="num">288</td><td class="num">56.3%</td></tr>
+  <tr><td>청년법회 출석</td><td class="num">1,621</td><td class="num">427</td><td class="num">1,119</td><td class="num">69.0%</td></tr>
+  <tr><td>어린이법회 출석</td><td class="num">3,717</td><td class="num">256</td><td class="num">1,255</td><td class="num">33.8%</td></tr>
+  <tr><td>학생법회 출석</td><td class="num">1,096</td><td class="num">261</td><td class="num">339</td><td class="num">30.9%</td></tr>
+  <tr><td>어린이법회 여는 교당<br><span class="small">연평균 기준</span></td><td class="num">21.4곳</td><td class="num">—</td><td class="num">10곳</td><td class="num">47%</td></tr>
+</table>
+<p class="small">균형패널 42개 교당(입교는 일반 교당 43곳) 기준. 코로나 전 대비는 원기110 ÷ 원기100~104 연평균.</p>
+
+<h3>17-3. 용어</h3>
+<div class="card">
+<dl class="term">
+  <dt>원기</dt><dd>원불교 연호. 서기 = 원기 + 1915. 원기110년 = 2025년</dd>
+  <dt>연인원</dt><dd>같은 사람이 열 번 오면 열 명으로 세는 방식</dd>
+  <dt>교도 / 신도</dt><dd>교도는 입교한 소속 구성원, 신도는 아직 입교하지 않은 참여자</dd>
+  <dt>균형패널</dt><dd>전 기간에 기록이 있는 교당만 모은 집합(42곳). 교당 구성 변화로 인한 왜곡을 막는 장치</dd>
+  <dt>계절지수</dt><dd>그 계절 값 ÷ 연평균. 1.10이면 평균보다 10% 많음</dd>
+  <dt>동원 배수</dt><dd>행사 당일 출석 ÷ 같은 교당·같은 해 일반법회 평균 출석</dd>
+  <dt>입교 배수</dt><dd>행사일 ±7일 실제 입교 ÷ 평상시 기대 입교. 1.0이면 행사 효과 없음</dd>
+  <dt>4축2재</dt><dd>신정절·대각개교절·석존성탄절·법인절(4축)과 육일대재·명절대재(2재)</dd>
+  <dt>급지 / 지구</dt><dd>급지는 교당 규모 등급(특·1~6급지), 지구는 지역 묶음(수원·안양·분당·인천)</dd>
+</dl>
+</div>
+
+<h3>17-4. 산출 파일</h3>
+<table>
+  <tr><th style="width:300px">파일</th><th>내용</th></tr>
+  <tr><td><code>postcovid_current_state_report.html</code></td><td>본 보고서</td></tr>
+  <tr><td><code>analysis_plan_postcovid_current_state.html</code></td><td>실행 계획서 v2.1</td></tr>
+  <tr><td><code>event_conversion.csv</code></td><td>행사별 입교 전환 원자료(관측·기대·배수·강건성)</td></tr>
+  <tr><td><code>temple_master.csv</code></td><td>교당 마스터 55행 — 정규교당 44 / 폐소 1 / 기관·기타 10, 지구·급지 포함</td></tr>
+  <tr><td><code>balanced_panel_temples.csv</code></td><td>균형패널 목록</td></tr>
+  <tr><td><code>stage1/core_panel.pkl</code> · <code>gyodo_raw.pkl</code> · <code>*.py</code></td><td>정제 완료 패널과 재현 스크립트</td></tr>
+</table>
+<p class="small">개인 신상(성명·법호·연락처·주소·생년월일)은 어떤 산출물에도 포함하지 않았으며, 개인은 교도번호로만 다뤘습니다.</p>
+
+<hr>
+<p class="small" style="text-align:center;color:var(--sub)">
+경기인천교구 교화 분석 · 「회복 이후의 4년」 · 2026년 8월 4일<br>
+원기107~110년(2022~2025) · 일반 교당 43곳(번개교당 제외) · 정례법회 9,268건 · 4축2재 712건 · 입교 993명
+</p>
+
+</div></body></html>
