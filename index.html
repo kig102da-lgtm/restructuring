@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>경기인천교구 교화 분석 자료실</title>
 <style>
-:root{--ink:#14130f;--ink2:#54524b;--ink3:#8a887f;--line:#e6e4dd;--navy:#1f2a44;--violet:#3a2f6b;--s1:#2a78d6}
+:root{--ink:#14130f;--ink2:#54524b;--ink3:#8a887f;--line:#e6e4dd;--navy:#1f2a44;--violet:#3a2f6b;--s1:#2a78d6;--accent:#F15925;--accent-d:#C43F17}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#f4f3ef;color:var(--ink);font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
 .hd{background:linear-gradient(120deg,var(--navy),var(--violet));color:#fff;padding:44px 0 38px}
@@ -12,6 +12,9 @@ h1{font-size:28px;font-weight:800;letter-spacing:-.01em}
 .hd p{margin-top:9px;color:#d6dcec;font-size:14.5px}
 main{padding:34px 0 60px}
 h2{font-size:15px;font-weight:800;color:var(--violet);margin:26px 0 12px;letter-spacing:.02em}
+h2.new{color:var(--accent-d)}
+h2 .badge{display:inline-block;font-size:10.5px;font-weight:700;color:#fff;background:var(--accent);border-radius:6px;padding:2px 7px;margin-left:7px;vertical-align:2px;letter-spacing:0}
+.note{font-size:12.5px;color:var(--ink2);margin:-4px 0 12px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:680px){.grid{grid-template-columns:1fr}}
 a.card{display:block;background:#fff;border:1px solid var(--line);border-radius:13px;padding:18px 20px;text-decoration:none;color:inherit;transition:.15s;box-shadow:0 1px 2px rgba(0,0,0,.03)}
@@ -19,15 +22,26 @@ a.card:hover{border-color:var(--s1);transform:translateY(-2px);box-shadow:0 6px 
 a.card .t{font-size:16px;font-weight:800}
 a.card .d{font-size:12.5px;color:var(--ink2);margin-top:5px}
 a.card .tag{display:inline-block;font-size:11px;font-weight:700;color:var(--s1);background:#eef4fc;border-radius:6px;padding:3px 8px;margin-top:9px}
+a.card.hero{grid-column:1/-1;background:linear-gradient(120deg,#fdefe9,#fff6f2);border-color:#f3d6c8}
+a.card.hero:hover{border-color:var(--accent)}
+a.card.hero .tag{color:var(--accent-d);background:#fbe3d8}
+a.card.old{opacity:.72}
 .full{grid-column:1/-1;background:linear-gradient(120deg,#eef2fb,#f6eefc);border-color:#d9d5ec}
 footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--ink3);font-size:12px}
 </style></head><body>
 <div class="hd"><div class="wrap">
  <div class="eye">원불교 경기인천교구 · 교화 분석</div>
  <h1>경기인천교구 교화 현황 분석 자료실</h1>
- <p>원기100~110년(2015~2025) · 재적교도 8,843명 · 44개 교당 · 지구·급지·교당별 분석</p>
+ <p>원기97~110년(2012~2025) · 44개 교당 · 지구·급지·교당별 분석</p>
 </div></div>
 <main class="wrap">
+ <h2 class="new">경기인천교구 교화 14년 (원기97~110)<span class="badge">최신</span></h2>
+ <p class="note">같은 교구를 두 개의 창으로 봅니다 — <b>2부</b>는 원기97~110년 14년(균형패널 38개 교당), <b>3부</b>는 원기107~110년 4년(일반 교당 43곳). 4부 23장.</p>
+ <div class="grid">
+  <a class="card hero" href="gyeongin-w97-110-report.html"><div class="t">경기인천교구 교화 14년 — 본편</div><div class="d">출석 총량·법회 종류·교당/급지/지구·입교와 교도의 14년 변화, 지역 인구가 설명하는 몫, 원기120년 전망, 그리고 최근 4년의 월·계절·비대면·행사 정밀 분석. 대시보드 + 그래프 58개.</div><span class="tag">종합 보고서 · 4부 23장</span></a>
+  <a class="card" href="gyeongin-postcovid-brief.html"><div class="t">의사결정 브리프</div><div class="d">본편을 6절로 압축한 그래프 중심 요약. 지금 결정할 것 / 확인부터 할 것 / 계속 볼 것으로 나눈 과제 13개.</div><span class="tag">1페이지 요약</span></a>
+  <a class="card" href="gyeongin-temple-cards.html"><div class="t">교당별 카드 (38개 교당)</div><div class="d">교당마다 한 장 — 출석·지역 인구·침투율의 14년 변화, 입교 누계, 2035년 유소년·고령 전망.</div><span class="tag">부록</span></a>
+ </div>
  <h2>교구 전체</h2>
  <div class="grid">
   <a class="card" href="gyeongin_gyohwa_analysis.html"><div class="t">교구 전체 상세 분석</div><div class="d">교도·연령·성별, 법회출석, 주거지, 가족관계, 성장추적, 인구-출석 상관 등 6개 분석</div><span class="tag">상세 보고서</span></a>
@@ -47,13 +61,14 @@ footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--ink3);fo
  <div class="grid">
   <a class="card full" href="gyeongin_gyodang_dashboard.html"><div class="t">44개 교당 통합 대시보드</div><div class="d">교당을 선택하면 해당 교당의 자료와 인포그래픽이 표시됩니다. 지구·급지별 분류, 교구 평균 대비 비교 및 순위 포함.</div><span class="tag">인터랙티브</span></a>
  </div>
- <h2>회복 이후의 4년 (원기107~110)</h2>
+ <h2>이전 판 · 방법론</h2>
+ <p class="note">아래 「회복 이후의 4년」은 위 「경기인천교구 교화 14년」의 <b>이전 판</b>입니다. 기존에 공유한 링크를 위해 남겨 둡니다.</p>
  <div class="grid">
-  <a class="card" href="gyeongin-postcovid-4years-report.html"><div class="t">회복 이후의 4년 — 현황 보고서</div><div class="d">법회출석·입교의 시기별 구조, 월별·계절 리듬, 비대면 법회, 교당·급지·지구별 증감, 행사 효과</div><span class="tag">상세 보고서</span></a>
+  <a class="card old" href="gyeongin-postcovid-4years-report.html"><div class="t">회복 이후의 4년 (구판)</div><div class="d">원기107~110년 4년 기준 · 6부 19장. 최신판은 맨 위 「경기인천교구 교화 14년」입니다.</div><span class="tag">이전 판</span></a>
   <a class="card" href="gyeongin-postcovid-4years-plan.html"><div class="t">분석 실행 계획서</div><div class="d">지표 정의, 모듈 A·B·C 설계, 코로나 전 비교 취급 방식, 검증 계획</div><span class="tag">방법론</span></a>
  </div>
 </main>
 <footer><div class="wrap">
- 데이터: 경기인천교구 교도기본정보·법회출석(원기90~110)·가족/생애단계·교당현황. · 법회출석=정례법회 연1회 이상 출석 교도수(중복 제외). · 원기=서기−1915. · 자동 생성 보고서.
+ 데이터: 경기인천교구 교도기본정보·법회출석(원기90~110)·가족/생애단계·교당현황, 행정안전부 주민등록 인구통계(2012~2025). · 법회출석=정례법회 연1회 이상 출석 교도수(중복 제외). · 원기=서기−1915. · 자동 생성 보고서.
 </div></footer>
 </body></html>
